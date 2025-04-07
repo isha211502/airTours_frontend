@@ -1,0 +1,100 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@theme {
+  --color-primary: #2538ef;
+  --color-dark-background: #050a30;
+  --color-light-background: #00b1ff;
+  --color-soft-blue: #cbebf5;
+  --color-title: #b68d40;
+  --color-body: #122620;
+  --color-grey-font: #868b8e;
+  --color-error: #f51720;
+  --color-success: #59981a;
+  --color-border: #eeede7;
+  --font-title: "Spectral SC", serif;
+  --default-font-family: "Montserrat Alternates", serif;
+}
+
+/* ----------- Font Family ---------- */
+@font-face {
+  font-family: "JostBold";
+  src: local("JostBold"), url("./fonts/Jost-Bold.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "JostItalic";
+  src: local("JostItalic"), url("./fonts/Jost-Italic.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "JostRegular";
+  src: local("JostRegular"), url("./fonts/Jost-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RalewayBold";
+  src: local("RalewayBold"), url("./fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RalewayItalic";
+  src: local("RalewayItalic"),
+    url("./fonts/Raleway-Italic.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "</Container>";
+  src: local("RalewayRegular"),
+    url("./fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+/* ---------- NavBar ---------- */
+.css-ptdwpq-MuiPaper-root-MuiAppBar-root {
+  background-color: transparent !important;
+}
+/*/---------- home ------------*/
+.Sec1background {
+  background-color: #414143;
+  background-image: url("../src/assets/Images/Sec2Background.png");
+  background-size: "contain";
+  background-position: "cover";
+}
+.WhyChooseUsBackground {
+  background-image: url("../src/assets/Images/WhyChooseUsBackground.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.servicebackground {
+  background-image: url("../src/assets/Images/line.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.customerspeakbackground {
+  background-image: url("../src/assets/Images/CustomersSpeakBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.informationbackground {
+  background-image: url("../src/assets/Images/line.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* About Page  */
+.AboutSec5Background {
+  background-image: url("../src/assets/Svg/AboutSec5Background.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
