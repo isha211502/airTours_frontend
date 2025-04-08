@@ -37,7 +37,7 @@ const AboutSec1 = () => {
         <Box
           sx={{
             width: "300px",
-            height: "350px",
+            height: "400px",
             backgroundColor: "#d3d3d3",
             borderRight: "8px solid #4E64EE",
             borderBottom: "8px solid #4E64EE",
@@ -50,8 +50,8 @@ const AboutSec1 = () => {
         <Typography
           sx={{
             color: color.blue,
-            fontSize: "2rem",
-            lineHeight: "2.2rem",
+            fontSize: "3rem",
+            lineHeight: "2.5rem",
             fontWeight: "700",
             fontFamily: "RalewayRegular",
           }}
@@ -61,7 +61,7 @@ const AboutSec1 = () => {
         <Typography
           sx={{
             color: color.blue,
-            fontSize: "2rem",
+            fontSize: "3rem",
             fontWeight: "700",
             fontFamily: "RalewayRegular",
           }}
@@ -70,7 +70,8 @@ const AboutSec1 = () => {
         </Typography>
         <Typography
           sx={{
-            fontSize: "1rem",
+            fontSize: "1.2rem",
+            lineHeight: "1.5rem",
             fontWeight: "700",
             fontWeight: "JostRegular",
             whiteSpace: "pre-line",

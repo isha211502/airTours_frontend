@@ -30,8 +30,9 @@ const AboutSec4 = () => {
         <Box sx={{ width: "100%", py: 5 }}>
           <Typography
             sx={{
-              fontFamily: "RalewayRegular",
-              fontSize: "2rem",
+              fontFamily: "RalewayBold",
+              fontSize: "3rem",
+              lineHeight: "3rem",
               fontWeight: 700,
               color: color.blue,
             }}

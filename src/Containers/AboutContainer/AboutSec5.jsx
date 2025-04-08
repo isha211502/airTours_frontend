@@ -33,9 +33,10 @@ const AboutSec5 = () => {
           <Typography
             mb={1}
             sx={{
-              fontSize: "2rem",
+              fontSize: "3rem",
+              lineHeight: "3rem",
               fontWeight: 700,
-              fontFamily: "RalewayRegular",
+              fontFamily: "RalewayBold",
             }}
           >
             Meet Our Leadership & Team

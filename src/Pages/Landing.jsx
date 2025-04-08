@@ -7,16 +7,17 @@ import Services from "../Containers/HomeContainers/Services";
 import CustomersSpeak from "../Containers/HomeContainers/CustomersSpeak";
 import Information from "../Containers/HomeContainers/Information";
 import Contact from "../Containers/HomeContainers/Contact";
-import { Grid } from "@mui/material";
+// import { Grid } from "@mui/material";
 import LinePlane from "../assets/Svg/pline.svg";
 import PlaneTicket from "../assets/Svg/PlaneTicket.svg";
+import { Grid } from "@mui/material";
 
 export default function Landing() {
   return (
-    <div>
+    <Grid>
       <Grid
         sx={{
-          height: "100vh",
+          height: { xs: "40vh", md: "100vh" },
           marginTop: "-100px",
           position: "relative",
           zIndex: -1,
@@ -24,7 +25,8 @@ export default function Landing() {
       >
         <HomeBanner />
       </Grid>
-      <Grid
+      {/* <div
+        className="homesec1"
         sx={{
           height: { xs: "62", lg: "70rem" },
           marginTop: { xs: "-90vh", md: "-92vh", lg: "-100vh" },
@@ -33,8 +35,8 @@ export default function Landing() {
         }}
       >
         <HomeText />
-      </Grid>
-      <div style={{ backgroundColor: "#414143" }}>
+      </div> */}
+      <div style={{ backgroundColor: "#414143", marginTo: "-10%" }}>
         <HomeSec1 />
       </div>
       <Grid className="WhyChooseUsBackground">
@@ -71,12 +73,12 @@ export default function Landing() {
       <Grid className="customerspeakbackground">
         <CustomersSpeak />
       </Grid>
-      <Grid className="informationbackground">
+      <Grid
+        className="informationbackground"
+        sx={{ marginTop: { xs: "0rem", md: "14%" } }}
+      >
         <Information />
       </Grid>
-      <Grid sx={{ backgroundColor: "#333" }}>
-        <Contact />
-      </Grid>
-    </div>
+    </Grid>
   );
 }

@@ -9,6 +9,7 @@ import {
   Avatar,
 } from "@mui/material";
 import { color } from "../../constant";
+import OCSPlane from "../../assets/Svg/OCSPlane.svg";
 const testimonials = [
   {
     name: "Rajesh P.",
@@ -29,7 +30,7 @@ const testimonials = [
 
 const CustomersSpeak = () => {
   return (
-    <Box sx={{ backgroundColor: "#fff", py: 5 }}>
+    <Box sx={{ backgroundColor: "#fff", pt: 5 }}>
       <Container>
         <Typography
           fontFamily="RalewayBold"
@@ -50,7 +51,13 @@ const CustomersSpeak = () => {
           Customer Testimonials
         </Typography>
 
-        <Grid container spacing={3} display="flex" justifyContent="center">
+        <Grid
+          container
+          spacing={3}
+          display="flex"
+          justifyContent="center"
+          sx={{ position: "relative", zIndex: 1 }}
+        >
           {testimonials.map((testimonial, index) => (
             <Grid
               item
@@ -93,6 +100,18 @@ const CustomersSpeak = () => {
               </Card>
             </Grid>
           ))}
+        </Grid>
+        <Grid sx={{ display: { xs: "none", lg: "block" } }}>
+          <img
+            src={OCSPlane}
+            alt=""
+            style={{
+              marginTop: "-500px",
+              zIndex: "-1",
+              position: "absolute",
+              marginLeft: "30px",
+            }}
+          />
         </Grid>
       </Container>
     </Box>

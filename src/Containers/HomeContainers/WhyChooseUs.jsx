@@ -53,7 +53,13 @@ const WhyChooseUs = () => {
         >
           Why Choose Us?
         </Typography>
-        <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
+            // display: { xs: "none", md: "block" },
+          }}
+        >
           <img src={plane} alt="" />
         </Box>{" "}
         {/* Service*/}
@@ -71,7 +77,7 @@ const WhyChooseUs = () => {
               sm={6}
               lg={3}
               key={index}
-              sx={{ width: "250px" }}
+              sx={{ hight: "auto", width: { xs: "100%", md: "22%" } }}
             >
               <Card
                 sx={{
@@ -90,10 +96,10 @@ const WhyChooseUs = () => {
                   sx={{
                     backgroundColor: "#4E64EE",
                     borderRadius: "50%",
-                    height: "6rem",
-                    width: "6rem",
+                    height: "8rem",
+                    width: "8rem",
                     position: "absolute",
-                    top: "-2.5rem",
+                    top: "-3.5rem",
                     left: "50%",
                     transform: "translateX(-50%)",
                     display: "flex",

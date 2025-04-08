@@ -19,8 +19,9 @@ const AboutSec2 = () => {
       <Container>
         <Typography
           sx={{
-            fontFamily: "RalewayRegular",
-            fontSize: "2rem",
+            fontFamily: "RalewayBold",
+            fontSize: "3rem",
+            lineHeight: "3rem",
             color: color.blue,
             fontWeight: "700",
           }}
@@ -56,12 +57,20 @@ const AboutSec2 = () => {
               >
                 <Typography
                   mb={1}
-                  sx={{ fontSize: "1.2rem", fontFamily: "JostRegular" }}
+                  sx={{
+                    fontSize: "1.5rem",
+                    fontFamily: "JostRegular",
+                    fontWeight: 500,
+                  }}
                 >
                   {item.title}
                 </Typography>
                 <Typography
-                  sx={{ fontSize: "1rem", fontFamily: "JostRegular" }}
+                  sx={{
+                    fontSize: "1rem",
+                    fontFamily: "JostRegular",
+                    fontWeight: 500,
+                  }}
                 >
                   {item.description}
                 </Typography>

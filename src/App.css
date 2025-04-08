@@ -46,6 +46,7 @@ body {
   src: local("RalewayBold"), url("./fonts/Raleway-Bold.ttf") format("truetype");
   font-weight: normal;
 }
+
 @font-face {
   font-family: "RalewayItalic";
   src: local("RalewayItalic"),
@@ -53,7 +54,7 @@ body {
   font-weight: normal;
 }
 @font-face {
-  font-family: "</Container>";
+  font-family: "RalewayRegular";
   src: local("RalewayRegular"),
     url("./fonts/Raleway-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -74,6 +75,42 @@ body {
   background-image: url("../src/assets/Images/WhyChooseUsBackground.png");
   background-position: right;
   background-repeat: no-repeat;
+  display: block;
+}
+@media only screen and (max-width: 800px) {
+  .WhyChooseUsBackground {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .WCULine {
+    width: 20%;
+    padding-left: 50px;
+    margin-top: -100px;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .WCUPlan {
+    width: 75%;
+    padding-left: 100px;
+    margin-top: -50vh;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .WCULine {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .WCUPlan {
+    display: none;
+  }
 }
 .servicebackground {
   background-image: url("../src/assets/Images/line.png");
@@ -91,10 +128,57 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.homesec1 {
+  height: auto;
+  margin-top: -100vh;
+  position: relative;
+  z-index: -1;
+}
+
+/* @media screen and (min-device-width: 375px) and (max-device-width: 413px) {
+  .homesec1 {
+    display: "flex";
+    justify-content: "center";
+    align-items: "center";
+    height: 32vh;
+    margin-top: -90vh;
+  }
+} */
+/* @media only screen and (max-width: 414px) {
+  .homesec1 {
+    height: 31vh;
+    margin-top: -97vh;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .homesec1 {
+    height: 32vh;
+    margin-top: -98vh;
+  }
+} */
+/* @media only screen and (max-width: 430px) {
+  .homesec1 {
+    height: 32vh;
+    margin-top: -98vh;
+  }
+} */
+/* @media only screen and (max-width: 1023px) {
+  .homesec1 {
+    height: 32vh;
+    margin-top: -98vh;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .homesec1 {
+    height: 90vh;
+    margin-top: -98vh;
+  }
+} */
+
 /* About Page  */
-/* .AboutSec5Background {
+.AboutSec5Background {
   background-image: url("../src/assets/Svg/AboutSec5Background.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-} */
+}

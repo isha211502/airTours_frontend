@@ -83,12 +83,14 @@ import Landing from "./Landing";
 
 function Home({ screen }) {
   return (
-    <div>
+    <Grid>
       <Navbar />
       {screen ? <Grid>{screen}</Grid> : <Landing />}
-
+      <Grid sx={{ backgroundColor: "#333" }}>
+        <Contact />
+      </Grid>
       <Footer />
-    </div>
+    </Grid>
   );
 }
 

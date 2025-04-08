@@ -6,6 +6,8 @@ import AboutSec2 from "../Containers/AboutContainer/AboutSec2";
 import AboutSec3 from "../Containers/AboutContainer/AboutSec3";
 import AboutSec4 from "../Containers/AboutContainer/AboutSec4";
 import AboutSec5 from "../Containers/AboutContainer/AboutSec5";
+import AboutSec6 from "../Containers/AboutContainer/AboutSec6";
+import AboutSec7 from "../Containers/AboutContainer/AboutSec7";
 
 const About = () => {
   return (
@@ -18,6 +20,8 @@ const About = () => {
       <div className="AboutSec5Background">
         <AboutSec5 />
       </div>
+      <AboutSec6 />
+      <AboutSec7 />
     </Grid>
   );
 };

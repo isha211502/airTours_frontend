@@ -7,23 +7,23 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
-import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
-import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
-import DescriptionIcon from "@mui/icons-material/Description";
-
+import img1 from "../../assets/Svg/Clock.svg";
+import img2 from "../../assets/Svg/Customize.svg";
+import img3 from "../../assets/Svg/Documnet.svg";
+import { color } from "../../constant";
 const features = [
   {
-    icon: <HeadsetMicIcon sx={{ fontSize: 40, color: "#3f51b5" }} />,
+    img: img1,
     title: "24/7 Support",
     description: "Our travel consultants are always ready to assist you.",
   },
   {
-    icon: <SettingsSuggestIcon sx={{ fontSize: 40, color: "#3f51b5" }} />,
+    img: img2,
     title: "Customized Travel Solutions",
     description: "We tailor our services to meet your unique travel needs.",
   },
   {
-    icon: <DescriptionIcon sx={{ fontSize: 40, color: "#3f51b5" }} />,
+    img: img3,
     title: "Hassle-Free Documentation",
     description: "We handle all the paperwork so you can travel worry-free.",
   },
@@ -33,10 +33,24 @@ const AbouSec7 = () => {
   return (
     <Box sx={{ px: { xs: 1, md: 5 }, py: 8 }}>
       <Container>
-        <Typography variant="h4" fontWeight="bold" gutterBottom>
+        <Typography
+          sx={{
+            fontFamily: "RalewayBold",
+            fontSize: "3rem",
+            lineHeight: "3rem",
+            fontWeight: 700,
+          }}
+        >
           Our Commitment to Customer Satisfaction
         </Typography>
-        <Typography variant="subtitle1" color="text.secondary" gutterBottom>
+        <Typography
+          sx={{
+            fontFamily: "JostRegular",
+            fontSize: "1.5rem",
+            fontWeight: 500,
+            marginTop: "1rem",
+          }}
+        >
           At Air Tours Inc., our customers are our priority. We understand that
           travel planning can be overwhelming, which is why we take pride in
           offering personalized assistance at every stage of your journey.
@@ -63,10 +77,10 @@ const AbouSec7 = () => {
                   width: "300px",
                   height: "100%",
                   textAlign: "center",
-                  backgroundColor: "#1a1a1a",
-                  color: "white",
-                  px: 2,
-                  py: 4,
+                  backgroundColor: color.lightdark,
+                  color: color.white,
+                  px: 1,
+                  py: 2,
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
@@ -74,16 +88,29 @@ const AbouSec7 = () => {
                   borderRadius: 2,
                 }}
               >
-                {item.icon}
+                <Box>
+                  <img src={item.img} alt="img" width="80" height="80" />
+                </Box>
                 <CardContent>
                   <Typography
-                    variant="subtitle1"
-                    fontWeight="bold"
-                    gutterBottom
+                    sx={{
+                      fontFamily: "JostRegular",
+                      fontSize: "1.2rem",
+                      fontWeight: 800,
+                      textAlign: "left",
+                    }}
                   >
                     {item.title}
                   </Typography>
-                  <Typography variant="body2">{item.description}</Typography>
+                  <Typography
+                    sx={{
+                      fontFamily: "JostRegular",
+                      fontSize: "1.2rem",
+                      textAlign: "left",
+                    }}
+                  >
+                    {item.description}
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
