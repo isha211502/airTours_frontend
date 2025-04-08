@@ -14,7 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation
 import { path } from "../constant";
 import logo from "../assets/Images/ATILogo.jpg";
-const pages = ["Home", "About", "Services", "Contact"];
+const pages = ["Home", "About", "Service", "Contact"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

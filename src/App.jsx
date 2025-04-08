@@ -9,7 +9,7 @@ import { path } from "./constant";
 import { color } from "./constant";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
-import Services from "./Pages/Services";
+import Services from "./Pages/Service";
 
 function App() {
   return (
