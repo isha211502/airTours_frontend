@@ -11,7 +11,7 @@ import {
 import Linkdin from "../assets/Svg/Linkdin.svg";
 import Facebook from "../assets/Svg/Facebook.svg";
 import Instagram from "../assets/Svg/Instaram.svg";
-
+import logo from "../assets/Images/ATILogo.jpg";
 const Footer = () => {
   return (
     // <Container>
@@ -34,7 +34,7 @@ const Footer = () => {
           color="#4E64EE"
           fontWeight="700"
         >
-          LOGO
+          <img src={logo} alt="" style={{ height: "30%", width: "30%" }} />
         </Typography>
         <Box mt={2}>
           <Link href="#" sx={{ mx: 1 }}>

@@ -8,12 +8,13 @@ import {
   Menu,
   MenuItem,
   Container,
+  Grid,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation
 import { path } from "../constant";
-
-const pages = ["Home", "Destination", "Gallery", "Blog", "About", "Contact"];
+import logo from "../assets/Images/ATILogo.jpg";
+const pages = ["Home", "About", "Services", "Contact"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -49,7 +50,7 @@ function Navbar() {
           }}
         >
           {/* Logo */}
-          <Typography
+          {/* <Typography
             component="div"
             sx={{
               color: "White",
@@ -60,9 +61,11 @@ function Navbar() {
               fontFamily: "Raleway, sans-serif",
               paddingX: { md: "3rem", lg: "5rem" },
             }}
-          >
-            LOGO
-          </Typography>
+          > */}
+          <Grid sx={{ height: { xs: 40, md: 80 }, width: { xs: 40, md: 80 } }}>
+            <img src={logo} alt="" style={{ height: "100%", width: "100%" }} />
+          </Grid>
+          {/* </Typography> */}
 
           {/* Desktop Navigation */}
           <Box

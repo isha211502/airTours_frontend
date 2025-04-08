@@ -37,8 +37,9 @@ const AboutSec3 = () => {
                   sx={{
                     color: color.blue,
                     fontWeight: 700,
-                    fontFamily: "RalewayRegular",
-                    fontSize: { xs: "1.7rem", md: "2rem" },
+                    fontFamily: "RalewayBold",
+                    fontSize: "3rem",
+                    lineHeight: "3rem",
                   }}
                 >
                   Core Values That Drive Us
@@ -51,7 +52,13 @@ const AboutSec3 = () => {
                 lg={6}
                 textAlign={{ xs: "left", md: "right" }}
               >
-                <Typography sx={{ fontFamily: "JostRegular", fontWeight: 500 }}>
+                <Typography
+                  sx={{
+                    fontFamily: "JostRegular",
+                    fontSize: "1.2rem",
+                    fontWeight: 600,
+                  }}
+                >
                   At Air Tours Inc., we operate with a <br /> commitment to the
                   following principles
                 </Typography>
@@ -64,7 +71,7 @@ const AboutSec3 = () => {
               <Box
                 key={index}
                 sx={{
-                  backgroundColor: color.dark,
+                  backgroundColor: color.lightdark,
                   color: color.white,
                   p: 2,
                   my: 1,
@@ -73,6 +80,7 @@ const AboutSec3 = () => {
                   textAlign: "center",
                   fontSize: "1rem",
                   fontWeight: "600",
+                  letterSpacing: "0.1em",
                 }}
               >
                 {value.title} —{" "}

@@ -12,4 +12,5 @@ export const color = {
   dark: "#2E2D2D",
   white: "#FFFFFF",
   black: "#2E2D2D",
+  lightdark: "#414143",
 };
