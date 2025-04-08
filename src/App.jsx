@@ -9,6 +9,7 @@ import { path } from "./constant";
 import { color } from "./constant";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
+import Services from "./Pages/Services";
 
 function App() {
   return (
@@ -17,13 +18,14 @@ function App() {
         <Route path={path.home} element={<Home />} />
         <Route path={path.about} element={<Home screen={<About />} />} />
         <Route path={path.contact} element={<Home screen={<Contact />} />} />
-        <Route path={path.blog} element={<Home screen={<Blog />} />} />
+        <Route path={path.service} element={<Home screen={<Services />} />} />
+        {/* <Route path={path.blog} element={<Home screen={<Blog />} />} />
 
         <Route path={path.gallery} element={<Home screen={<Gallery />} />} />
         <Route
           path={path.destination}
           element={<Home screen={<Destination />} />}
-        />
+        /> */}
       </Routes>
     </Router>
   );
