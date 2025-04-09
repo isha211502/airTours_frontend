@@ -43,13 +43,19 @@ const HomeSec1 = () => {
             sx={{
               width: "100%",
               display: "flex",
-              justifyContent: { lg: "space-between" },
+              justifyContent: { md: "space-between" },
             }}
           >
             <Typography
               fontWeight="700"
               fontFamily="RalewayRegular"
-              sx={{ fontSize: { xs: "1.7rem", lg: "2.3rem" } }}
+              sx={{
+                fontSize: {
+                  xs: "1.7rem",
+                  lg: "2.3rem",
+                  textAlign: { xs: "center", md: "left" },
+                },
+              }}
             >
               Discover the World with <br /> Air Tours Inc
             </Typography>

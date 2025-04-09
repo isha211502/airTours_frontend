@@ -1,22 +1,3 @@
-// import { Grid } from "@mui/material";
-// import ServicesSec1 from "../Containers/ServicesContainer/ServicesSec1";
-// import ServicesSec2 from "../Containers/ServicesContainer/ServicesSec2";
-// import ServicesSec3 from "../Containers/ServicesContainer/ServicesSec3";
-// import ServicesSec4 from "../Containers/ServicesContainer/ServicesSec4";
-// const Services = () => {
-//   return (
-//     <Grid>
-//       <div className="servicesbanner">
-//         <ServicesSec1 />
-//       </div>
-//       <ServicesSec2 />
-//       <ServicesSec3 />
-//       <ServicesSec4 />
-//     </Grid>
-//   );
-// };
-
-// export default Services;
 import { Grid, useMediaQuery, useTheme } from "@mui/material";
 import ServicesSec1 from "../Containers/ServicesContainer/ServicesSec1";
 import ServicesSec2 from "../Containers/ServicesContainer/ServicesSec2";

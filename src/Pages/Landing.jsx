@@ -9,7 +9,7 @@ import Information from "../Containers/HomeContainers/Information";
 import Contact from "../Containers/HomeContainers/Contact";
 // import { Grid } from "@mui/material";
 import LinePlane from "../assets/Svg/pline.svg";
-import PlaneTicket from "../assets/Svg/PlaneTicket.svg";
+import WCUBackground2 from "../assets/Svg/WCUBackground2.svg";
 import { Grid } from "@mui/material";
 
 export default function Landing() {
@@ -17,8 +17,8 @@ export default function Landing() {
     <Grid>
       <Grid
         sx={{
-          height: { xs: "40vh", md: "100vh" },
-          marginTop: "-100px",
+          // height: { xs: "35vh", sm: "40vh", md: "100vh", lg: "100vh" },
+          marginTop: { xs: "-72px", sm: "-98px" },
           position: "relative",
           zIndex: -1,
         }}
@@ -36,20 +36,20 @@ export default function Landing() {
       >
         <HomeText />
       </div> */}
-      <div style={{ backgroundColor: "#414143", marginTo: "-10%" }}>
+      <div style={{ backgroundColor: "#414143", marginTop: "-10%" }}>
         <HomeSec1 />
       </div>
       <Grid className="WhyChooseUsBackground">
         <WhyChooseUs />
       </Grid>
-      <Grid
+      {/* <Grid
         height={"30vh"}
-        sx={{ display: { xs: "none", lg: "block", width: "100%" } }}
+        sx={{ display: { xs: "none", lg: "block", width: "70%" } }}
       >
         <img
           style={{
-            paddingLeft: "200px",
-            marginTop: "-100px",
+            paddingLeft: "5%",
+            marginTop: "-10%",
             zIndex: 1,
             position: "relative",
           }}
@@ -58,15 +58,27 @@ export default function Landing() {
         />
         <img
           style={{
-            marginTop: "-600px",
+            width: "90%",
+            marginTop: "-90%",
             position: "relative",
-            paddingLeft: "400px",
+            paddingLeft: "30%",
             zIndex: -1,
           }}
           src={LinePlane}
           alt="LinePlane"
         />
-      </Grid>
+      </Grid> */}
+      {/* <Grid
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "-6%",
+          zIndex: "-1",
+          position: "relative",
+        }}
+      >
+        <img src={WCUBackground2} alt="" />
+      </Grid> */}
       <Grid className="servicebackground">
         <Services />
       </Grid>

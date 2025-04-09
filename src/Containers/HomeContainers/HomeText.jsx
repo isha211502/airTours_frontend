@@ -17,7 +17,7 @@ const HomeText = () => {
           sx={{
             fontSize: { xs: "1rem", md: "4rem", lg: "6rem" },
             fontFamily: "RalewayBold",
-            lineHeight: { xs: "1rem", md: "4rem", lg: "7rem" },
+            lineHeight: { xs: "1rem", sm: "2rem", md: "4rem", lg: "7rem" },
           }}
         >
           Welcome to Air Tours Inc

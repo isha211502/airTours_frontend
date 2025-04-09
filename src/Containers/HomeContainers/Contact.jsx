@@ -1,7 +1,15 @@
 import React from "react";
-import { Container, Grid, TextField, Typography, Box } from "@mui/material";
+import {
+  Container,
+  Grid,
+  TextField,
+  Typography,
+  Box,
+  Button,
+} from "@mui/material";
 import { Email, Phone, LocationOn } from "@mui/icons-material";
 import FlightConatact from "../../assets/Svg/FlightConatact.svg";
+import { color } from "../../constant";
 const Contact = () => {
   const contactDetails = [
     {
@@ -168,6 +176,23 @@ const Contact = () => {
                 borderRadius: 1,
               }}
             />
+            <Button
+              className="submitbtn"
+              type="submit"
+              variant="outlined"
+              sx={{
+                marginY: "2%",
+                border: "2px solid ",
+                color: color.white,
+                borderColor: color.blue,
+                padding: "10px 20px",
+                width: { xs: "100%", sm: "50%", xl: "40%" },
+                fontSize: "1rem",
+                fontFamily: "RalewayRegular",
+              }}
+            >
+              Send
+            </Button>
           </Grid>
         </Grid>
       </Grid>

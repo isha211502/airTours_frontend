@@ -77,26 +77,24 @@ const Footer = () => {
         >
           Quick Links
         </Typography>
-        {["Home", "Destination", "Gallery", "Blog", "About", "Contact"].map(
-          (text) => (
-            <Typography key={text}>
-              <Link
-                href="#"
-                fontFamily="RalewayRegular"
-                fontSize="1.2rem"
-                color="#4E64EE"
-                fontWeight="500"
-                sx={{
-                  textDecoration: "none",
-                  display: "block",
-                  lineHeight: "2.5rem",
-                }}
-              >
-                {text}
-              </Link>
-            </Typography>
-          )
-        )}
+        {["Home", "About", "Service", "Contact"].map((text) => (
+          <Typography key={text}>
+            <Link
+              href="#"
+              fontFamily="RalewayRegular"
+              fontSize="1.2rem"
+              color="#4E64EE"
+              fontWeight="500"
+              sx={{
+                textDecoration: "none",
+                display: "block",
+                lineHeight: "2.5rem",
+              }}
+            >
+              {text}
+            </Link>
+          </Typography>
+        ))}
       </Grid>
 
       {/* Right Section */}
