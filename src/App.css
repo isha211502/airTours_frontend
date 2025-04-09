@@ -73,7 +73,7 @@ body {
 }
 .WhyChooseUsBackground {
   background-image: url("../src/assets/Images/WhyChooseUsBackground.png");
-  background-position: right;
+  background-position: right top;
   background-repeat: no-repeat;
   display: block;
 }
@@ -134,46 +134,11 @@ body {
   position: relative;
   z-index: -1;
 }
-
-/* @media screen and (min-device-width: 375px) and (max-device-width: 413px) {
-  .homesec1 {
-    display: "flex";
-    justify-content: "center";
-    align-items: "center";
-    height: 32vh;
-    margin-top: -90vh;
-  }
-} */
-/* @media only screen and (max-width: 414px) {
-  .homesec1 {
-    height: 31vh;
-    margin-top: -97vh;
-  }
+.servicesbanner {
+  background-image: url("../src/assets/Images/ServicesBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-@media only screen and (max-width: 430px) {
-  .homesec1 {
-    height: 32vh;
-    margin-top: -98vh;
-  }
-} */
-/* @media only screen and (max-width: 430px) {
-  .homesec1 {
-    height: 32vh;
-    margin-top: -98vh;
-  }
-} */
-/* @media only screen and (max-width: 1023px) {
-  .homesec1 {
-    height: 32vh;
-    margin-top: -98vh;
-  }
-}
-@media only screen and (max-width: 1280px) {
-  .homesec1 {
-    height: 90vh;
-    margin-top: -98vh;
-  }
-} */
 
 /* About Page  */
 .AboutSec5Background {

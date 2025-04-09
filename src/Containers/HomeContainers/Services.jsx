@@ -119,7 +119,7 @@ const Services = () => {
                     alignItems: "center",
                   }}
                 >
-                  <Button
+                  {/* <Button
                     variant="contained"
                     sx={{
                       backgroundColor: color.blue,
@@ -128,7 +128,7 @@ const Services = () => {
                     }}
                   >
                     Learn More
-                  </Button>
+                  </Button> */}
                   <img
                     src={flight}
                     style={{ height: "60px", width: "100px" }}

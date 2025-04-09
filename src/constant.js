@@ -1,10 +1,11 @@
 export const path = {
   home: "/",
   about: "/about",
+  service: "/service",
   contact: "/contact",
-  blog: "/blog",
-  gallery: "/gallery",
-  destination: "/destination",
+  // blog: "/blog",
+  // gallery: "/gallery",
+  // destination: "/destination",
 };
 
 export const color = {

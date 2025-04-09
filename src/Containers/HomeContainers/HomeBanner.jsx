@@ -156,9 +156,19 @@ const HomeBanner = () => {
             <Grid sx={{ width: "70%" }}>
               <Typography
                 sx={{
-                  fontSize: { xs: "1rem", md: "4rem", lg: "6rem" },
+                  fontSize: {
+                    xs: "1rem",
+                    sm: "2.5rem",
+                    md: "4rem",
+                    lg: "6rem",
+                  },
                   fontFamily: "RalewayBold",
-                  lineHeight: { xs: "1rem", md: "4rem", lg: "7rem" },
+                  lineHeight: {
+                    xs: "0.8rem",
+                    sm: "1rem",
+                    md: "1.2rem",
+                    lg: "7rem",
+                  },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
@@ -166,7 +176,12 @@ const HomeBanner = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: "1rem", md: "2.7rem", lg: "3rem" },
+                  fontSize: {
+                    xs: "1rem",
+                    sm: "2.3rem",
+                    md: "2.7rem",
+                    lg: "3rem",
+                  },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
@@ -178,9 +193,19 @@ const HomeBanner = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: "0.5rem", md: "1rem", lg: "1.2rem" },
+                  fontSize: {
+                    xs: "0.5rem",
+                    sm: "0.8rem",
+                    md: "1rem",
+                    lg: "1.2rem",
+                  },
                   marginTop: { xs: "0.5rem", lg: "2rem" },
-                  lineHeight: { xs: "0.8rem", md: "1.2rem", lg: "1.5rem" },
+                  lineHeight: {
+                    xs: "0.8rem",
+                    sm: "1rem",
+                    md: "1.2rem",
+                    lg: "1.5rem",
+                  },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
@@ -217,9 +242,19 @@ const HomeBanner = () => {
             <Grid sx={{ width: "70%" }}>
               <Typography
                 sx={{
-                  fontSize: { xs: "1rem", md: "4rem", lg: "6rem" },
+                  fontSize: {
+                    xs: "1rem",
+                    sm: "2.5rem",
+                    md: "4rem",
+                    lg: "6rem",
+                  },
                   fontFamily: "RalewayBold",
-                  lineHeight: { xs: "1rem", md: "4rem", lg: "7rem" },
+                  lineHeight: {
+                    xs: "1rem",
+                    sm: "3rem",
+                    md: "4rem",
+                    lg: "7rem",
+                  },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
@@ -227,7 +262,12 @@ const HomeBanner = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: "1rem", md: "2.7rem", lg: "3rem" },
+                  fontSize: {
+                    xs: "1rem",
+                    sm: "2.3rem",
+                    md: "2.7rem",
+                    lg: "3rem",
+                  },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
@@ -239,9 +279,19 @@ const HomeBanner = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: "0.5rem", md: "1rem", lg: "1.2rem" },
+                  fontSize: {
+                    xs: "0.5rem",
+                    sm: "0.8rem",
+                    md: "1rem",
+                    lg: "1.2rem",
+                  },
                   marginTop: { xs: "0.5rem", lg: "2rem" },
-                  lineHeight: { xs: "0.8rem", md: "1.2rem", lg: "1.5rem" },
+                  lineHeight: {
+                    xs: "0.8rem",
+                    sm: "1rem",
+                    md: "1.2rem",
+                    lg: "1.5rem",
+                  },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
@@ -278,9 +328,19 @@ const HomeBanner = () => {
             <Grid sx={{ width: "70%" }}>
               <Typography
                 sx={{
-                  fontSize: { xs: "1rem", md: "4rem", lg: "6rem" },
+                  fontSize: {
+                    xs: "1rem",
+                    sm: "2.5rem",
+                    md: "4rem",
+                    lg: "6rem",
+                  },
                   fontFamily: "RalewayBold",
-                  lineHeight: { xs: "1rem", md: "4rem", lg: "7rem" },
+                  lineHeight: {
+                    xs: "1rem",
+                    sm: "3rem",
+                    md: "4rem",
+                    lg: "7rem",
+                  },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
@@ -288,7 +348,12 @@ const HomeBanner = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: { xs: "1rem", md: "2.7rem", lg: "3rem" },
+                  fontSize: {
+                    xs: "1rem",
+                    sm: "2.3rem",
+                    md: "2.7rem",
+                    lg: "3rem",
+                  },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
@@ -302,7 +367,12 @@ const HomeBanner = () => {
                 sx={{
                   fontSize: { xs: "0.5rem", md: "1rem", lg: "1.2rem" },
                   marginTop: { xs: "0.5rem", lg: "2rem" },
-                  lineHeight: { xs: "0.8rem", md: "1.2rem", lg: "1.5rem" },
+                  lineHeight: {
+                    xs: "0.8rem",
+                    sm: "1.5rem",
+                    md: "1.2rem",
+                    lg: "1.5rem",
+                  },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >

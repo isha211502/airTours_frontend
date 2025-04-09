@@ -12,6 +12,7 @@ import img2 from "../../assets/Svg/WCUImg5.svg";
 import img3 from "../../assets/Svg/WCUImg2.svg";
 import img4 from "../../assets/Svg/WCUImg3.svg";
 import plane from "../../assets/Svg/Plane4.svg";
+import WCUBackground2 from "../../assets/Svg/WCUBackground2.svg";
 import LinePlane from "../../assets/Svg/pline.svg";
 import { color } from "../../constant";
 const services = [
@@ -50,6 +51,7 @@ const WhyChooseUs = () => {
           sx={{ color: color.blue }}
           fontFamily="RalewayBold"
           fontSize="2rem"
+          boxShadow="none"
         >
           Why Choose Us?
         </Typography>
@@ -60,7 +62,7 @@ const WhyChooseUs = () => {
             // display: { xs: "none", md: "block" },
           }}
         >
-          <img src={plane} alt="" />
+          <img src={plane} alt="" style={{ hight: "10%", width: "10%" }} />
         </Box>{" "}
         {/* Service*/}
         <Grid
@@ -77,7 +79,10 @@ const WhyChooseUs = () => {
               sm={6}
               lg={3}
               key={index}
-              sx={{ hight: "auto", width: { xs: "100%", md: "22%" } }}
+              sx={{
+                hight: "auto",
+                width: { xs: "100%", sm: "45%", md: "40%", lg: "22%" },
+              }}
             >
               <Card
                 sx={{
@@ -124,6 +129,18 @@ const WhyChooseUs = () => {
               </Card>
             </Grid>
           ))}
+          <Grid
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: { xs: 0, md: "-10%", lg: "-7%" },
+              zIndex: "1",
+              position: "relative",
+              width: { xs: 0, md: "90%", lg: "100%" },
+            }}
+          >
+            <img src={WCUBackground2} alt="" width={"100%"} />
+          </Grid>
         </Grid>
       </Container>
     </Box>
