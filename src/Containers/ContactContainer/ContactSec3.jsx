@@ -81,12 +81,12 @@ const ContactSec3 = () => {
             />
             {/* Phone Number  */}
             <TextField
-              name="Phone Number"
+              name="Phone"
               //   value={formData.email}
               //   onChange={handleChange}
               fullWidth
               variant="standard"
-              label="Phone Number"
+              label="Phone"
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
                 input: { color: "white", fontSize: "1rem" },
@@ -114,25 +114,6 @@ const ContactSec3 = () => {
               }}
               //   error={!!errors.email}
               //   helperText={errors.email}
-              FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
-            />
-
-            {/* SUBJECT FIELD */}
-            <TextField
-              name="subject"
-              //   value={formData.subject}
-              //   onChange={handleChange}
-              fullWidth
-              variant="standard"
-              label="Subject"
-              InputLabelProps={{ style: { color: "white" } }}
-              sx={{
-                input: { color: "white", fontSize: "1rem" },
-                borderBottom: "1px solid white",
-                mb: 2,
-              }}
-              //   error={!!errors.subject}
-              //   helperText={errors.subject}
               FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
             />
 

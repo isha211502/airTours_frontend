@@ -79,7 +79,7 @@ export default function ServicesSec4() {
           <Typography
             sx={{
               fontFamily: "RalewayRegular",
-              fontSize: "3rem",
+              fontSize: "2.5rem",
               fontWeight: 800,
             }}
           >

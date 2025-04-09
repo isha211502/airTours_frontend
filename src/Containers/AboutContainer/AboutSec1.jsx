@@ -73,7 +73,7 @@ const AboutSec1 = () => {
             fontSize: "1.2rem",
             lineHeight: "1.5rem",
             fontWeight: "700",
-            fontWeight: "JostRegular",
+            fontFamily: "JostRegular",
             whiteSpace: "pre-line",
           }}
         >

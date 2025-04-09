@@ -32,31 +32,33 @@ const ServicesSec2 = () => {
   return (
     <Grid sx={{ marginY: "2rem" }}>
       <Container>
-        {/* <Grid
+        <Grid
           sx={{
             display: "flex",
             justifyContent: "center",
-          }}
-        > */}
-        <Typography
-          sx={{
-            fontSize: "3rem",
-            fontWeight: "800",
-            fontFamily: "RalewayRegular",
-            color: color.blue,
+            flexDirection: "column",
           }}
         >
-          Why Air Tours Inc.?
-        </Typography>
-        <Typography
-          sx={{
-            fontSize: "1rem",
-            fontWeight: "JostRegular",
-          }}
-        >
-          Try variety of benefits when using our services
-        </Typography>
-        {/* </Grid> */}
+          <Typography
+            sx={{
+              fontSize: { xs: "2.5rem", md: "3rem" },
+              fontWeight: "800",
+              fontFamily: "RalewayRegular",
+              color: color.blue,
+            }}
+          >
+            Why Air Tours Inc.?
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: "1rem",
+              fontWeight: "JostRegular",
+            }}
+          >
+            Try variety of benefits when using our services
+          </Typography>
+        </Grid>
+
         <Grid
           item
           xs={12}
@@ -71,7 +73,40 @@ const ServicesSec2 = () => {
           }}
         >
           {item.map((item, index) => (
-            <Grid key={index}>
+            // <Grid key={index}>
+            //   <img
+            //     src={item.img}
+            //     alt="photo"
+            //     style={{ height: "40px", width: "40px" }}
+            //   />
+            //   <Typography
+            //     sx={{
+            //       fontFamily: "JostRegular",
+            //       fontWeight: 600,
+            //       fontSize: "1rem",
+            //     }}
+            //   >
+            //     {item.title}
+            //   </Typography>
+            //   <Typography
+            //     sx={{
+            //       fontFamily: "JostRegular",
+            //       fontWeight: 400,
+            //       fontSize: "1rem",
+            //     }}
+            //   >
+            //     {item.para}
+            //   </Typography>
+            // </Grid>
+            <Grid
+              key={index}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center",
+              }}
+            >
               <img
                 src={item.img}
                 alt="photo"

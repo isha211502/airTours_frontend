@@ -18,16 +18,27 @@ const Footer = () => {
     <Grid
       container
       sx={{
-        justifyContent: "space-between",
+        justifyContent: { xs: "normal", lg: "space-between" },
         flexDirection: { xs: "column", sm: "row" },
-        width: "100%",
+        // width: "100%",
+        flexWrap: "nowrap",
         px: { xs: "1rem", lg: "8rem" },
         mt: "3rem",
         py: "1rem",
+        gap: 2,
       }}
     >
       {/* Left Section */}
-      <Grid item xs={12} sm={4} md={4}>
+      <Grid
+        item
+        xs={12}
+        sm={4}
+        md={4}
+        sx={{
+          // border: "1px solid black",
+          width: { xs: "100%", sm: "50%", md: "40%" },
+        }}
+      >
         <Typography
           fontFamily="RalewayRegular"
           fontSize="1rem"
@@ -36,29 +47,16 @@ const Footer = () => {
         >
           <img src={logo} alt="" style={{ height: "30%", width: "30%" }} />
         </Typography>
-        <Box mt={2}>
-          <Link href="#" sx={{ mx: 1 }}>
-            <img
-              src={Facebook}
-              alt=""
-              style={{ height: "2rem", width: "2rem" }}
-            />
-          </Link>
-          <Link href="#" sx={{ mx: 2 }}>
-            <img
-              src={Instagram}
-              alt=""
-              style={{ height: "2rem", width: "2rem" }}
-            />
-          </Link>
-          <Link href="#" sx={{ mx: 2 }}>
-            <img
-              src={Linkdin}
-              alt=""
-              style={{ height: "2rem", width: "2rem" }}
-            />
-          </Link>
-        </Box>
+        <Typography
+          fontFamily="RalewayRegular"
+          fontSize="1.2rem"
+          color="#4E64EE"
+          fontWeight="500"
+          sx={{ my: 3 }}
+        >
+          Sign up for our monthly blogletter to
+          <br /> stay informed about travel and tours
+        </Typography>
       </Grid>
 
       {/* Center Section */}
@@ -67,7 +65,14 @@ const Footer = () => {
         xs={12}
         sm={4}
         md={4}
-        sx={{ marginY: { xs: "1rem", md: "0rem" } }}
+        sx={{
+          marginY: {
+            xs: "1rem",
+            sm: "0rem",
+            // border: "1px solid black",
+            width: { xs: "100%", sm: "40%", md: "40%" },
+          },
+        }}
       >
         <Typography
           fontFamily="RalewayRegular"
@@ -103,7 +108,14 @@ const Footer = () => {
         xs={12}
         sm={4}
         md={4}
-        sx={{ paddingBottom: { xs: "1.5rem", md: "0rem" } }}
+        sx={{
+          paddingBottom: {
+            xs: "1.5rem",
+            md: "0rem",
+            // border: "1px solid black",
+            width: { xs: "100%", sm: "40%", md: "40%" },
+          },
+        }}
       >
         <Typography
           fontFamily="RalewayRegular"
@@ -111,32 +123,31 @@ const Footer = () => {
           color="#4E64EE"
           fontWeight="700"
         >
-          Subscribe
+          Follow Us On
         </Typography>
-        <Typography
-          fontFamily="RalewayRegular"
-          fontSize="1.2rem"
-          color="#4E64EE"
-          fontWeight="500"
-          sx={{ my: 3 }}
-        >
-          Sign up for our monthly blogletter to
-          <br /> stay informed about travel and tours
-        </Typography>
-        <Box display="flex" justifyContent="start" textAlign="left">
-          <TextField
-            InputLabelProps={{ style: { color: "white" } }}
-            size="small"
-            label="Email"
-            variant="outlined"
-            sx={{ mr: 1, backgroundColor: "#414143", color: "white" }}
-          />
+        <Box mt={2} sx={{ display: "flex", justifyContent: "space-around" }}>
+          <Grid href="#">
+            <img
+              src={Facebook}
+              alt=""
+              style={{ height: "2rem", width: "2rem" }}
+            />
+          </Grid>
+          <Grid href="#">
+            <img
+              src={Instagram}
+              alt=""
+              style={{ height: "2rem", width: "2rem" }}
+            />
+          </Grid>
+          <Grid href="#">
+            <img
+              src={Linkdin}
+              alt=""
+              style={{ height: "2rem", width: "2rem" }}
+            />
+          </Grid>
         </Box>
-        <Button
-          sx={{ marginTop: 1, backgroundColor: "#4E64EE", color: "white" }}
-        >
-          Send
-        </Button>
       </Grid>
     </Grid>
     // </Container>

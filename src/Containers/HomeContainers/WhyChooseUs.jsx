@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
         <Typography
           sx={{ color: color.blue }}
           fontFamily="RalewayBold"
-          fontSize="2rem"
+          fontSize="3rem"
           boxShadow="none"
         >
           Why Choose Us?
@@ -88,12 +88,13 @@ const WhyChooseUs = () => {
                 sx={{
                   backgroundColor: "#222",
                   color: "white",
-                  p: 2,
+                  padding: "0.2rem",
                   pt: 4,
                   textAlign: "left",
                   borderRadius: 2,
                   position: "relative",
                   overflow: "hidden",
+                  letterSpacing: "0.1rem",
                 }}
               >
                 {/* Blue Half-Circle */}
@@ -114,17 +115,24 @@ const WhyChooseUs = () => {
                 >
                   <img
                     style={{
-                      marginTop: "1.8rem",
-                      height: "2.5rem",
-                      width: "3rem",
+                      marginTop: "3rem",
+                      height: "3.5rem",
+                      width: "4rem",
                     }}
                     src={service.img}
                     alt=""
                   />
                 </Box>
-                <CardContent sx={{ marginTop: "2rem", height: "300px" }}>
-                  <Typography fontWeight="bold">{service.title}</Typography>
-                  <Typography mt={8}>{service.description}</Typography>
+                <CardContent sx={{ marginTop: "2rem", height: "320px" }}>
+                  <Typography
+                    sx={{ letterSpacing: "0.1rem" }}
+                    fontWeight="bold"
+                  >
+                    {service.title}
+                  </Typography>
+                  <Typography mt={8} sx={{ letterSpacing: "0.1rem" }}>
+                    {service.description}
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>

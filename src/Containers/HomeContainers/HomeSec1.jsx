@@ -80,10 +80,13 @@ const HomeSec1 = () => {
               fontFamily="JostRegular"
               fontSize="1.3rem"
               lineHeight="1.5rem"
+              letterSpacing="0.1rem"
             >
               Imagine a world where your travel needs are handled with
               professionalism, precision, and personalized service. That’s
-              exactly what Air Tours Inc. delivers.
+              exactly what Air Tours Inc. delivers. With decades of experience
+              and a passion for travel, we specialize in providing customized
+              travel solutions that cater to your unique needs.
             </Typography>
           </Box>
 
@@ -101,7 +104,7 @@ const HomeSec1 = () => {
               >
                 <Card
                   sx={{
-                    backgroundColor: "#111",
+                    backgroundColor: "#2E2D2D",
                     color: color.white,
                     p: 2,
                     textAlign: "center",
@@ -119,7 +122,7 @@ const HomeSec1 = () => {
                       transform: "translateX(-50%)",
                       width: "50px",
                       height: "50px",
-                      backgroundColor: "#4169E1",
+                      backgroundColor: "#4E64EE",
                       borderRadius: "50%",
                       display: "flex",
                       alignItems: "center",
@@ -149,6 +152,7 @@ const HomeSec1 = () => {
                       lineHeight="1.2rem"
                       textAlign="left"
                       fontFamily="JostRegular"
+                      letterSpacing="0.1rem"
                       mt={7}
                     >
                       {service.description}
@@ -181,6 +185,7 @@ const HomeSec1 = () => {
               fontFamily="JostRegular"
               fontSize="1.3rem"
               lineHeight="1.5rem"
+              letterSpacing="0.1rem"
             >
               We understand that every traveler has unique preferences. Whether
               you’re seeking a luxury vacation or a customized tour package, our

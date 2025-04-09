@@ -53,7 +53,7 @@ const Services = () => {
         <Typography
           textAlign="left"
           fontFamily="RalewayBold"
-          fontSize="2rem"
+          fontSize="3rem"
           mb={2}
           sx={{ color: color.blue }}
         >
@@ -68,6 +68,7 @@ const Services = () => {
             fontWeight: 500,
             fontFamily: "JostRegular",
             lineHeight: "1.5rem",
+            letterSpacing: "0.1rem",
           }}
         >
           Each journey is unique, and so are your travel needs. Whether you need
