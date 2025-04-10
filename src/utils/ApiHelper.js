@@ -43,24 +43,24 @@ export const useServiceData = () => {
   });
 };
 
-export const getServicesDetails = async (id) => {
-  try {
-    const { data } = await api.get(`/service/${id}`);
+// export const getServicesDetails = async (id) => {
+//   try {
+//     const { data } = await api.get(`/service/${id}`);
 
-    return data?.result;
-  } catch (error) {
-    console.log(error);
-  }
-};
+//     return data?.result;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 
-export const useServiceDetailsData = (id) => {
-  return useQuery({
-    queryKey: ["serviceDetails", id],
+// export const useServiceDetailsData = (id) => {
+//   return useQuery({
+//     queryKey: ["serviceDetails", id],
 
-    queryFn: () => getServicesDetails(id),
-    enabled: !!id,
-  });
-};
+//     queryFn: () => getServicesDetails(id),
+//     enabled: !!id,
+//   });
+// };
 
 // getClients
 
