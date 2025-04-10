@@ -25,17 +25,17 @@ const chooseUsData = [
 ];
 
 const AboutSec4 = () => {
-   const { data, isLoading, error } = useAboutData();
-  
-    const res = data?.result;
-  
-    if (isLoading) {
-      return <Typography>Loading...</Typography>;
-    }
-  
-    if (error) {
-      return <Typography>Error loading data!</Typography>;
-    }
+  const { data, isLoading, error } = useAboutData();
+
+  const res = data?.result;
+
+  if (isLoading) {
+    return <Typography>Loading...</Typography>;
+  }
+
+  if (error) {
+    return <Typography>Error loading data!</Typography>;
+  }
   return (
     <Grid>
       <Container>
@@ -92,7 +92,7 @@ const AboutSec4 = () => {
                   <Typography
                     sx={{
                       marginTop: "2rem",
-                      letterSpacing: "0.1rem",
+                      // letterSpacing: "0.1rem",
                       color: color.white,
                       fontSize: "1rem",
                       fontFamily: "JostRegular",

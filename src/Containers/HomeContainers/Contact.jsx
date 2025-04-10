@@ -194,7 +194,7 @@ const Contact = () => {
                 border: "2px solid ",
                 color: color.white,
                 borderColor: color.blue,
-                padding: "10px 20px",
+                padding: "5px 20px",
                 width: { xs: "100%", sm: "50%", md: "100%" },
                 fontSize: "1rem",
                 fontFamily: "RalewayRegular",

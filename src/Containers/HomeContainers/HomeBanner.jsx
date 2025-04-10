@@ -33,6 +33,17 @@ const HomeBanner = () => {
             textAlign: "center",
           }}
         >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 0.3)", // Black with 50% transparency
+              zIndex: -1, // Ensure it is behind the content but above the background
+            }}
+          ></div>
           <Grid
             sx={{
               display: "flex",
@@ -135,6 +146,17 @@ const HomeBanner = () => {
             textAlign: "center",
           }}
         >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 1)",
+              zIndex: -1,
+            }}
+          ></div>
           <Grid
             sx={{
               display: "flex",
@@ -237,6 +259,17 @@ const HomeBanner = () => {
             textAlign: "center",
           }}
         >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundColor: "rgba(0, 0, 0, 1)",
+              zIndex: -1,
+            }}
+          ></div>
           <Grid
             sx={{
               display: "flex",

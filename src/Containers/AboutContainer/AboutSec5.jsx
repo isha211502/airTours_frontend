@@ -1,5 +1,5 @@
 import { Box, Grid, Typography, Avatar, Container } from "@mui/material";
-
+// import MOLPlane from "../../assets/Svg/MOLPlane.svg";
 const leadershipTeam = [
   {
     name: "Mr. Mafat Patel",
@@ -27,7 +27,7 @@ const leadershipTeam = [
 const AboutSec5 = () => {
   return (
     <Grid>
-      <Container>
+      <Container sx={{ display: "flex" }}>
         <Box sx={{ px: { xs: 1, md: 0 }, py: 5 }}>
           {/* Section Title */}
           <Typography
@@ -117,6 +117,14 @@ const AboutSec5 = () => {
             ))}
           </Grid>
         </Box>
+        {/* <Box
+          sx={{
+            display: { xs: "none", md: "flex" }, // Hidden on xs, flex on md and larger
+            alignItems: "center",
+          }}
+        >
+          <img src={MOLPlane} alt="" />
+        </Box> */}
       </Container>
     </Grid>
   );

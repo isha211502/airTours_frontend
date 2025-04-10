@@ -7,7 +7,7 @@ import ContactSec3 from "../Containers/ContactContainer/ContactSec3";
 const Contact = () => {
   return (
     <Grid>
-      <ContactBanner />
+      {/* <ContactBanner /> */}
       <ContactSec2 />
       <ContactSec3 />
     </Grid>

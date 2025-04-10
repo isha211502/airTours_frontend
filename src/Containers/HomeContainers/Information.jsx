@@ -21,7 +21,7 @@ const Information = () => {
               fontSize: "1rem",
               fontFamily: "JostRegular",
               letterSpacing: "0.1rem",
-              fontWeight: 500,
+              fontWeight: 600,
             }}
           >
             At Air Tours Inc., we take pride in making travel as effortless as
@@ -39,6 +39,7 @@ const Information = () => {
                 color: color.blue,
                 fontFamily: "RalewayBold",
                 fontSize: "3rem",
+                lineHeight: "3rem",
               }}
             >
               Hassle-Free Booking & Documentation
@@ -49,7 +50,7 @@ const Information = () => {
                 fontSize: "1rem",
                 fontFamily: "JostRegular",
                 letterSpacing: "0.1rem",
-                fontWeight: 500,
+                fontWeight: 600,
               }}
             >
               We understand the complexities of travel documentation. Whether
@@ -64,6 +65,7 @@ const Information = () => {
                 color: color.blue,
                 fontFamily: "RalewayBold",
                 fontSize: "3rem",
+                lineHeight: "3rem",
               }}
             >
               Exclusive Travel Perks
@@ -74,7 +76,7 @@ const Information = () => {
                 fontSize: "1rem",
                 fontFamily: "JostRegular",
                 letterSpacing: "0.1rem",
-                fontWeight: 500,
+                fontWeight: 600,
               }}
             >
               Our clients enjoy priority access to special deals, personalized
