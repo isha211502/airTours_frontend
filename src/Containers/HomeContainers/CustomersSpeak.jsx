@@ -10,25 +10,14 @@ import {
 } from "@mui/material";
 import { color } from "../../constant";
 import OCSPlane from "../../assets/Svg/OCSPlane.svg";
-const testimonials = [
-  {
-    name: "Rajesh P.",
-    feedback:
-      "Air Tours Inc. made my trip to India seamless and stress-free. Their team handled my OCI and flight booking effortlessly. Highly recommend!",
-  },
-  {
-    name: "Nina D.",
-    feedback:
-      "I booked my first-ever cruise vacation through Air Tours, and it was an experience of a lifetime. Their customer service is outstanding.",
-  },
-  {
-    name: "Rajesh P.",
-    feedback:
-      "Air Tours Inc. made my trip to India seamless and stress-free. Their team handled my OCI and flight booking effortlessly. Highly recommend!",
-  },
-];
+import { useClientData } from "../../utils/ApiHelper";
+
 
 const CustomersSpeak = () => {
+  const { data, isLoading, error } = useClientData();
+
+  const res = data?.result;
+
   return (
     <Box sx={{ backgroundColor: "#fff", pt: 1 }}>
       <Container>
@@ -59,7 +48,7 @@ const CustomersSpeak = () => {
           justifyContent="center"
           sx={{ position: "relative", zIndex: 1 }}
         >
-          {testimonials.map((testimonial, index) => (
+          {res?.map((testimonial, index) => (
             <Grid
               item
               xs={12}
@@ -83,6 +72,7 @@ const CustomersSpeak = () => {
                 <CardContent>
                   <Box display="flex" alignItems="center" mb={2}>
                     <Avatar
+                      src={testimonial.imgurl}
                       sx={{ bgcolor: "#White", width: 70, height: 70, mr: 2 }}
                     />
                     <Typography
@@ -106,7 +96,7 @@ const CustomersSpeak = () => {
                       fontFamily: "JostRegular",
                     }}
                   >
-                    {testimonial.feedback}
+                    {testimonial.paragraph}
                   </Typography>
                 </CardContent>
               </Card>

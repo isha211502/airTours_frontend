@@ -1,5 +1,6 @@
 import { Grid, Box, Typography, Container } from "@mui/material";
 import { color } from "../../constant";
+import { useAboutData } from "../../utils/ApiHelper";
 const chooseUsData = [
   {
     title: "30+ Years of Industry Leadership",
@@ -24,6 +25,17 @@ const chooseUsData = [
 ];
 
 const AboutSec4 = () => {
+   const { data, isLoading, error } = useAboutData();
+  
+    const res = data?.result;
+  
+    if (isLoading) {
+      return <Typography>Loading...</Typography>;
+    }
+  
+    if (error) {
+      return <Typography>Error loading data!</Typography>;
+    }
   return (
     <Grid>
       <Container>
@@ -53,7 +65,7 @@ const AboutSec4 = () => {
           </Typography>
 
           <Grid container spacing={3}>
-            {chooseUsData.map((item, index) => (
+            {res?.chooseUs?.map((item, index) => (
               <Grid key={index} item xs={12} sm={6} md={2} lg={2}>
                 <Box
                   sx={{

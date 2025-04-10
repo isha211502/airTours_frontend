@@ -11,42 +11,21 @@ import {
 
 import flight from "../../assets/Svg/flight.svg";
 import { color } from "../../constant";
-const services = [
-  {
-    title: "Flight Ticket Booking",
-    details: [
-      "Domestic and international flights at unbeatable prices.",
-      "Special deals for NRIs traveling to India.",
-      "Group bookings, last-minute travel, and exclusive airline partnerships.",
-    ],
-  },
-  {
-    title: "Indian Passport & OCI Services",
-    details: [
-      "Hassle-free Indian passport renewals, name changes, and corrections.",
-      "OCI card applications, renewals, and assistance for new applicants.",
-      "Step-by-step guidance to ensure smooth processing.",
-    ],
-  },
-  {
-    title: "Flight Ticket Booking",
-    details: [
-      "Domestic and international flights at unbeatable prices.",
-      "Special deals for NRIs traveling to India.",
-      "Group bookings, last-minute travel, and exclusive airline partnerships.",
-    ],
-  },
-  {
-    title: "Indian Passport & OCI Services",
-    details: [
-      "Hassle-free Indian passport renewals, name changes, and corrections.",
-      "OCI card applications, renewals, and assistance for new applicants.",
-      "Step-by-step guidance to ensure smooth processing.",
-    ],
-  },
-];
+import { useServiceData } from "../../utils/ApiHelper";
+
 
 const Services = () => {
+  const { data, isLoading, error } = useServiceData();
+
+  const res = data?.result?.filter((item) => item.homePage === true);
+
+  if (isLoading) {
+    return <Typography>Loading...</Typography>;
+  }
+
+  if (error) {
+    return <Typography>Error loading data!</Typography>;
+  }
   return (
     <Box sx={{ backgroundColor: "#fff", py: { xs: "2rem", lg: "2rem" } }}>
       <Container>
@@ -76,7 +55,7 @@ const Services = () => {
           perfect solution for you.
         </Typography>
         <Grid container spacing={3} display="flex" justifyContent="center">
-          {services.map((service, index) => (
+          {res?.map((service, index) => (
             <Grid key={index}>
               <Card
                 sx={{
@@ -108,10 +87,10 @@ const Services = () => {
                       letterSpacing: "0.1rem",
                     }}
                   >
-                    {service.title}
+                    {service.homeTitle}
                   </Typography>
                   <ul>
-                    {service.details.map((detail, i) => (
+                    {service?.bulletpoints?.map((detail, i) => (
                       <li key={i}>
                         <Typography
                           sx={{
