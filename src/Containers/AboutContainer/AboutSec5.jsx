@@ -43,7 +43,12 @@ const AboutSec5 = () => {
           </Typography>
           <Typography
             mb={4}
-            sx={{ fontSize: "1rem", fontFamily: "JostRegular" }}
+            sx={{
+              fontSize: "1rem",
+              fontFamily: "JostRegular",
+              fontWeight: 700,
+              letterSpacing: "0.1rem",
+            }}
           >
             The Visionary Behind Air Tours Inc.
           </Typography>
@@ -57,7 +62,7 @@ const AboutSec5 = () => {
                     display: "flex",
                     flexDirection: { xs: "column", sm: "row" },
                     alignItems: { xs: "flex-start", sm: "center" },
-
+                    letterSpacing: "0.1rem",
                     paddingX: { xs: 0, md: 5 },
                     borderRadius: 2,
                   }}
@@ -71,6 +76,7 @@ const AboutSec5 = () => {
                         width: 100,
                         height: 100,
                         border: "1px solid red",
+                        letterSpacing: "0.1rem",
                         mr: { sm: 3 },
                         mb: { xs: 2, sm: 0 },
                       }}
@@ -84,16 +90,22 @@ const AboutSec5 = () => {
                         fontSize: "1.2rem",
                         fontWeight: "700",
                         fontFamily: "JostRegular",
+                        letterSpacing: "0.1rem",
                       }}
                     >
                       {member.name},{" "}
-                      <span style={{ fontWeight: 500 }}>{member.role}</span>
+                      <span
+                        style={{ fontFamily: "JostRegular", fontWeight: 800 }}
+                      >
+                        {member.role}
+                      </span>
                     </Typography>
                     <Typography
                       sx={{
                         fontSize: "1rem",
                         fontWeight: "500",
                         fontFamily: "JostRegular",
+                        letterSpacing: "0.1rem",
                       }}
                       mt={1}
                     >

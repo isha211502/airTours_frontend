@@ -48,7 +48,7 @@ const services = [
 
 const Services = () => {
   return (
-    <Box sx={{ backgroundColor: "#fff", py: { xs: "2rem", lg: "8rem" } }}>
+    <Box sx={{ backgroundColor: "#fff", py: { xs: "2rem", lg: "2rem" } }}>
       <Container>
         <Typography
           textAlign="left"
@@ -63,7 +63,7 @@ const Services = () => {
           textAlign="center"
           mb={4}
           sx={{
-            fontSize: "1rem",
+            fontSize: "1.5rem",
             color: color.blue,
             fontWeight: 500,
             fontFamily: "JostRegular",
@@ -75,13 +75,12 @@ const Services = () => {
           a quick flight booking or a fully planned vacation, we have the
           perfect solution for you.
         </Typography>
-
         <Grid container spacing={3} display="flex" justifyContent="center">
           {services.map((service, index) => (
             <Grid key={index}>
               <Card
                 sx={{
-                  backgroundColor: "#333",
+                  backgroundColor: "#414143",
                   color: "#fff",
                   p: 2,
                   display: "flex",
@@ -101,14 +100,28 @@ const Services = () => {
                   <Typography
                     width="200px"
                     fontWeight="bold"
-                    sx={{ display: "flex", justifyContent: "top" }}
+                    sx={{
+                      display: "flex",
+                      fontSize: "1rem",
+                      marginTop: "0.8rem",
+                      fontFamily: "RalewayRegular",
+                      letterSpacing: "0.1rem",
+                    }}
                   >
                     {service.title}
                   </Typography>
                   <ul>
                     {service.details.map((detail, i) => (
                       <li key={i}>
-                        <Typography variant="body2">{detail}</Typography>
+                        <Typography
+                          sx={{
+                            fontFamily: "JostRegular",
+                            letterSpacing: "0.1rem",
+                            fontSize: "1rem",
+                          }}
+                        >
+                          {detail}
+                        </Typography>
                       </li>
                     ))}
                   </ul>
@@ -117,7 +130,7 @@ const Services = () => {
                   sx={{
                     display: "flex",
                     flexDirection: "column",
-                    alignItems: "center",
+                    // alignItems: "center",
                   }}
                 >
                   {/* <Button
@@ -132,7 +145,11 @@ const Services = () => {
                   </Button> */}
                   <img
                     src={flight}
-                    style={{ height: "60px", width: "100px" }}
+                    style={{
+                      height: "80px",
+                      width: "150px",
+                      marginTop: "0.8rem",
+                    }}
                     alt=""
                   />
                   {/* <FlightTakeoffIcon sx={{ fontSize: 50, color: "#3A3ACC" }} /> */}

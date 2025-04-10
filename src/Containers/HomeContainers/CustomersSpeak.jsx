@@ -30,11 +30,11 @@ const testimonials = [
 
 const CustomersSpeak = () => {
   return (
-    <Box sx={{ backgroundColor: "#fff", pt: 5 }}>
+    <Box sx={{ backgroundColor: "#fff", pt: 1 }}>
       <Container>
         <Typography
           fontFamily="RalewayBold"
-          fontSize="2rem"
+          fontSize="3rem"
           textAlign="left"
           sx={{ color: color.blue }}
           mb={2}
@@ -45,7 +45,8 @@ const CustomersSpeak = () => {
           fontSize="1rem"
           fontFamily="RalewayBold"
           textAlign="left"
-          sx={{ color: color.blue }}
+          letterSpacing="0.1rem"
+          sx={{ color: color.blue, fontWeight: 500 }}
           mb={4}
         >
           Customer Testimonials
@@ -70,17 +71,19 @@ const CustomersSpeak = () => {
               <Card
                 sx={{
                   height: "250px",
-                  backgroundColor: "#333",
+                  backgroundColor: "#414143",
                   color: "#fff",
-                  p: 3,
-                  borderBottom: "0.8rem solid #3A3ACC",
-                  borderRight: "0.8rem solid #3A3ACC",
+                  p: 1,
+                  borderBottom: "0.8rem solid #4E64EE",
+                  borderRight: "0.8rem solid #4E64EE",
+                  boxShadow: "none",
+                  borderRadius: "0px",
                 }}
               >
                 <CardContent>
                   <Box display="flex" alignItems="center" mb={2}>
                     <Avatar
-                      sx={{ bgcolor: "#bbb", width: 40, height: 40, mr: 2 }}
+                      sx={{ bgcolor: "#White", width: 70, height: 70, mr: 2 }}
                     />
                     <Typography
                       sx={{
@@ -88,12 +91,21 @@ const CustomersSpeak = () => {
                         fontWeight: "600",
                         fontSize: "1.2rem",
                         lineHeight: "1.2rem",
+                        marginTop: "2rem",
+                        letterSpacing: "0.1rem",
                       }}
                     >
                       {testimonial.name}
                     </Typography>
                   </Box>
-                  <Typography sx={{ marginTop: "3rem", fontSize: "1rem" }}>
+                  <Typography
+                    sx={{
+                      marginTop: "3rem",
+                      fontSize: "1rem",
+                      letterSpacing: "0.1rem",
+                      fontFamily: "JostRegular",
+                    }}
+                  >
                     {testimonial.feedback}
                   </Typography>
                 </CardContent>

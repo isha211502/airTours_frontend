@@ -61,20 +61,21 @@ const Contact = () => {
       <Typography
         display="flex"
         justifyContent="center"
-        fontFamily="RalewayRegular"
-        fontWeight="700"
-        fontSize="2rem"
+        fontFamily="RalewayBold"
+        fontWeight="500"
+        fontSize="3rem"
       >
         Ready to Start Your Journey?
       </Typography>
       <Typography
         display="flex"
         justifyContent="center"
-        fontFamily="RalewayRegular"
-        fontSize="1.2rem"
+        fontFamily="JostRegular"
+        fontSize="1.1rem"
+        letterSpacing="0.1rem"
       >
         Your next adventure is just a call away. Contact us today to book your
-        flights, cruises, or tours!
+        flights, cruises, or tours and let us handle all the details!
       </Typography>
       <Grid container spacing={4} alignItems="center">
         {/* Left Side */}
@@ -102,7 +103,11 @@ const Contact = () => {
               {contactDetails.map((item, index) => (
                 <Box key={index} display="flex" alignItems="center" mb={1}>
                   {item.icon}
-                  <Typography fontSize="1rem" fontFamily="RalewayRegular">
+                  <Typography
+                    fontSize="0.9rem"
+                    fontFamily="JostRegular"
+                    letterSpacing="0.1rem"
+                  >
                     {item.text}
                   </Typography>
                 </Box>
@@ -121,7 +126,11 @@ const Contact = () => {
           >
             <Box sx={{ textAlign: "center" }}>
               {" "}
-              <img src={FlightConatact} alt="FlightConatact" />{" "}
+              <img
+                src={FlightConatact}
+                alt="FlightConatact"
+                style={{ marginTop: "20%" }}
+              />{" "}
             </Box>
           </Grid>
 
@@ -186,7 +195,7 @@ const Contact = () => {
                 color: color.white,
                 borderColor: color.blue,
                 padding: "10px 20px",
-                width: { xs: "100%", sm: "50%", xl: "40%" },
+                width: { xs: "100%", sm: "50%", md: "100%" },
                 fontSize: "1rem",
                 fontFamily: "RalewayRegular",
               }}

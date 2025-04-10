@@ -36,7 +36,7 @@ const AboutSec6 = () => {
             sx={{
               fontFamily: "RalewayBold",
               fontWeight: 700,
-              fontSize: "3rem",
+              fontSize: "2.7rem",
               lineHeight: "3rem",
             }}
             mb={1}
@@ -51,6 +51,9 @@ const AboutSec6 = () => {
               fontWeight: 500,
               fontSize: "1.5rem",
               marginY: "1rem",
+              letterSpacing: "0.1rem",
+              marginTop: "1rem  ",
+              fontWeight: 500,
             }}
           >
             At Air Tours Inc., we pride ourselves on offering an all-in-one
@@ -72,14 +75,16 @@ const AboutSec6 = () => {
                   px: 2,
                   py: 1.5,
                   borderRadius: 1,
-                  fontSize: "1.2rem",
+                  fontSize: "1rem",
                   lineHeight: 1.5,
                   marginY: "1rem",
                   display: "flex",
                   justifyContent: "center",
+                  fontFamily: "JostRegular",
+                  letterSpacing: "0.1rem",
                 }}
               >
-                <Typography sx={{ fontSize: "1.2rem" }}>
+                <Typography sx={{ fontWeight: 600, fontSize: "1rem" }}>
                   {service.title} —{" "}
                 </Typography>
                 {service.description}

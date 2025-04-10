@@ -60,7 +60,7 @@ const AboutSec2 = () => {
                   sx={{
                     fontSize: "1.5rem",
                     fontFamily: "JostRegular",
-                    fontWeight: 500,
+                    fontWeight: 600,
                   }}
                 >
                   {item.title}
@@ -70,6 +70,7 @@ const AboutSec2 = () => {
                     fontSize: "1rem",
                     fontFamily: "JostRegular",
                     fontWeight: 500,
+                    letterSpacing: "0.1rem",
                   }}
                 >
                   {item.description}
