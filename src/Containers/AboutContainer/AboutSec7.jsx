@@ -49,6 +49,7 @@ const AbouSec7 = () => {
             fontSize: "1.5rem",
             fontWeight: 500,
             marginTop: "1rem",
+            letterSpacing: "0.1rem",
           }}
         >
           At Air Tours Inc., our customers are our priority. We understand that
@@ -95,9 +96,11 @@ const AbouSec7 = () => {
                   <Typography
                     sx={{
                       fontFamily: "JostRegular",
-                      fontSize: "1.2rem",
+                      fontSize: "1.1rem",
                       fontWeight: 800,
                       textAlign: "left",
+                      letterSpacing: "0.1rem",
+                      marginTop: "1rem",
                     }}
                   >
                     {item.title}
@@ -105,8 +108,11 @@ const AbouSec7 = () => {
                   <Typography
                     sx={{
                       fontFamily: "JostRegular",
-                      fontSize: "1.2rem",
+                      fontSize: "1.1rem",
+
+                      letterSpacing: "0.1rem",
                       textAlign: "left",
+                      lineHeight: "1.2rem",
                     }}
                   >
                     {item.description}

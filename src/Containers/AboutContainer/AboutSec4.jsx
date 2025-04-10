@@ -44,6 +44,7 @@ const AboutSec4 = () => {
               fontFamily: "JostRegular",
               fontSize: "1.2rem",
               paddingY: "1.5rem",
+              letterSpacing: "0.1rem",
             }}
           >
             With a wealth of experience and a dedicated team, we stand out as a
@@ -60,6 +61,7 @@ const AboutSec4 = () => {
                     color: color.white,
                     p: 1,
                     borderRadius: 2,
+                    letterSpacing: "0.1rem",
                     height: "100%",
                     width: { xs: "250px", md: "180px" },
                   }}
@@ -68,6 +70,7 @@ const AboutSec4 = () => {
                     sx={{
                       color: color.white,
                       fontSize: "1rem",
+                      letterSpacing: "0.1rem",
                       fontWeight: "700",
                       fontFamily: "JostRegular",
                     }}
@@ -77,6 +80,7 @@ const AboutSec4 = () => {
                   <Typography
                     sx={{
                       marginTop: "2rem",
+                      letterSpacing: "0.1rem",
                       color: color.white,
                       fontSize: "1rem",
                       fontFamily: "JostRegular",

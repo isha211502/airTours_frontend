@@ -39,8 +39,8 @@ const AboutSec1 = () => {
             width: "300px",
             height: "400px",
             backgroundColor: "#d3d3d3",
-            borderRight: "8px solid #4E64EE",
-            borderBottom: "8px solid #4E64EE",
+            borderRight: "1.5rem solid #4E64EE",
+            borderBottom: "1.5rem solid #4E64EE",
           }}
         />
       </Grid>
@@ -53,7 +53,7 @@ const AboutSec1 = () => {
             fontSize: "3rem",
             lineHeight: "2.5rem",
             fontWeight: "700",
-            fontFamily: "RalewayRegular",
+            fontFamily: "RalewayBold",
           }}
         >
           {aboutContent.title}
@@ -63,7 +63,7 @@ const AboutSec1 = () => {
             color: color.blue,
             fontSize: "3rem",
             fontWeight: "700",
-            fontFamily: "RalewayRegular",
+            fontFamily: "RalewayBold",
           }}
         >
           {aboutContent.subtitle}
@@ -75,6 +75,7 @@ const AboutSec1 = () => {
             fontWeight: "700",
             fontFamily: "JostRegular",
             whiteSpace: "pre-line",
+            letterSpacing: "0.1rem",
           }}
         >
           {aboutContent.description}

@@ -116,8 +116,8 @@ const WhyChooseUs = () => {
                   <img
                     style={{
                       marginTop: "3rem",
-                      height: "3.5rem",
-                      width: "4rem",
+                      height: "3.2rem",
+                      width: "3.8rem",
                     }}
                     src={service.img}
                     alt=""
@@ -125,12 +125,24 @@ const WhyChooseUs = () => {
                 </Box>
                 <CardContent sx={{ marginTop: "2rem", height: "320px" }}>
                   <Typography
-                    sx={{ letterSpacing: "0.1rem" }}
+                    sx={{
+                      letterSpacing: "0.1rem",
+                      fontFamily: "JostRegular",
+                      marginTop: "0.8rem",
+                    }}
                     fontWeight="bold"
                   >
                     {service.title}
                   </Typography>
-                  <Typography mt={8} sx={{ letterSpacing: "0.1rem" }}>
+                  <Typography
+                    mt={8}
+                    sx={{
+                      letterSpacing: "0.1rem",
+                      fontSize: "1rem",
+                      fontFamily: "JostRegular",
+                      lineHeight: "1.1rem",
+                    }}
+                  >
                     {service.description}
                   </Typography>
                 </CardContent>

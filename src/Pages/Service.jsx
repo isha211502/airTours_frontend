@@ -13,7 +13,7 @@ const Services = () => {
       <div className="servicesbanner">
         <ServicesSec1 />
       </div>
-      <ServicesSec2 />
+      {/* <ServicesSec2 /> */}
       {/* Show ServicesSec4 only on small screens (xs, sm), otherwise show ServicesSec3 */}
       {isSmallScreen ? <ServicesSec4 /> : <ServicesSec3 />}
     </Grid>

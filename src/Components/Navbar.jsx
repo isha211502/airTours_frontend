@@ -44,7 +44,7 @@ function Navbar() {
           disableGutters
           sx={{
             display: "flex",
-            justifyContent: { xs: "space-between", md: "center" },
+            justifyContent: { xs: "space-between", md: "space-between" },
             alignItems: "center",
             width: "100%",
           }}
@@ -66,33 +66,38 @@ function Navbar() {
             <img src={logo} alt="" style={{ height: "100%", width: "100%" }} />
           </Grid>
           {/* </Typography> */}
-
           {/* Desktop Navigation */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
               gap: 4,
-              justifyContent: { md: "center", lg: "center" },
+              justifyContent: { md: "end", lg: "end" },
               flexGrow: 1,
             }}
           >
-            {pages.map((page) => (
-              <Link
-                key={page}
-                to={path[page.toLowerCase()]}
-                style={{
-                  textDecoration: "none",
-                  color: "White",
-                  fontWeight: "600",
-                  fontSize: "1rem",
-                  fontFamily: "Raleway, sans-serif",
-                }}
-              >
-                {page}
-              </Link>
-            ))}
-          </Box>
+            {pages.map((page) => {
+              const isActive = location.pathname === path[page.toLowerCase()];
 
+              return (
+                <Link
+                  key={page}
+                  to={path[page.toLowerCase()]}
+                  style={{
+                    fontFamily: "JostRegular",
+                    fontSize: "1.2rem",
+                    textDecoration: "none",
+                    color: isActive ? "#4E64EE" : "white", // Active link color blue
+                    fontWeight: isActive ? "bold" : "600",
+                    fontSize: "1rem",
+                    fontFamily: "Raleway, sans-serif",
+                    transition: "0.3s",
+                  }}
+                >
+                  {page}
+                </Link>
+              );
+            })}
+          </Box>
           {/* Mobile Menu */}
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton

@@ -57,6 +57,7 @@ const AboutSec3 = () => {
                     fontFamily: "JostRegular",
                     fontSize: "1.2rem",
                     fontWeight: 600,
+                    letterSpacing: "0.1rem",
                   }}
                 >
                   At Air Tours Inc., we operate with a <br /> commitment to the
@@ -73,12 +74,13 @@ const AboutSec3 = () => {
                 sx={{
                   backgroundColor: color.lightdark,
                   color: color.white,
-                  p: 2,
+                  paddingY: 1,
                   my: 1,
                   borderRadius: 1,
                   fontFamily: "JostRegular",
                   textAlign: "center",
-                  fontSize: "1rem",
+                  fontSize: "1.2rem",
+
                   fontWeight: "600",
                   letterSpacing: "0.1em",
                 }}

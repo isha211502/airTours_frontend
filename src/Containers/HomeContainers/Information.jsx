@@ -10,19 +10,26 @@ const Information = () => {
             sx={{
               color: color.blue,
               fontFamily: "RalewayBold",
-              fontSize: "2rem",
+              fontSize: "3rem",
             }}
           >
             Experience Unmatched Convenience
           </Typography>
           <Typography
             mt={1}
-            sx={{ fontSize: "1rem", fontFamily: "JostRegular" }}
+            sx={{
+              fontSize: "1rem",
+              fontFamily: "JostRegular",
+              letterSpacing: "0.1rem",
+              fontWeight: 500,
+            }}
           >
             At Air Tours Inc., we take pride in making travel as effortless as
             possible. We go beyond just booking your flights—we assist with all
             the essential travel formalities that often cause unnecessary
-            stress.
+            stress. Our streamlined process ensures that everything, from
+            document verification to ticket confirmations, is handled
+            professionally and efficiently.
           </Typography>
         </Grid>
         <Grid sx={{ display: { md: "flex" }, gap: 5 }}>
@@ -31,14 +38,19 @@ const Information = () => {
               sx={{
                 color: color.blue,
                 fontFamily: "RalewayBold",
-                fontSize: "2rem",
+                fontSize: "3rem",
               }}
             >
               Hassle-Free Booking & Documentation
             </Typography>
             <Typography
               mt={1}
-              sx={{ fontSize: "1rem", fontFamily: "JostRegular" }}
+              sx={{
+                fontSize: "1rem",
+                fontFamily: "JostRegular",
+                letterSpacing: "0.1rem",
+                fontWeight: 500,
+              }}
             >
               We understand the complexities of travel documentation. Whether
               it's applying for an OCI card, renewing your passport, or
@@ -51,14 +63,19 @@ const Information = () => {
               sx={{
                 color: color.blue,
                 fontFamily: "RalewayBold",
-                fontSize: "2rem",
+                fontSize: "3rem",
               }}
             >
               Exclusive Travel Perks
             </Typography>
             <Typography
               mt={1}
-              sx={{ fontSize: "1rem", fontFamily: "JostRegular" }}
+              sx={{
+                fontSize: "1rem",
+                fontFamily: "JostRegular",
+                letterSpacing: "0.1rem",
+                fontWeight: 500,
+              }}
             >
               Our clients enjoy priority access to special deals, personalized
               customer support, and exclusive travel upgrades, making their

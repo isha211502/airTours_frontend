@@ -103,6 +103,7 @@ const HomeBanner = () => {
                   },
                   textAlign: { xs: "center", sm: "left" },
                   fontWeight: 500,
+                  latterSpaceing: "0.01rem",
                 }}
               >
                 For over 30 years, Air Tours Inc. has been a trusted name in the
