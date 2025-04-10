@@ -22,10 +22,13 @@ const ContactSec3 = () => {
           }}
         >
           <Grid
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            sx={{ flex: 1, backgroundColor: color.blue, minHeight: "350px" }}
+            sx={{
+              flex: 1,
+              backgroundColor: color.blue,
+              minHeight: "350px",
+              borderRight: "1rem solid #414143",
+              borderBottom: "1rem solid #414143",
+            }}
           ></Grid>
 
           {/* FORM SECTION */}
@@ -39,23 +42,23 @@ const ContactSec3 = () => {
               display: "flex",
               flexDirection: "column",
               gap: "2rem",
+              borderRight: "1rem solid #414143",
+              borderBottom: "1rem solid #414143",
             }}
           >
             <Typography
-              data-aos="zoom-in"
-              data-aos-duration="1500"
               fontWeight="bold"
               sx={{
                 fontSize: { xs: "2.5rem", md: "2.5rem" },
-                fontFamily: "Bamebold",
+                fontFamily: "Jostbold",
                 textAlign: { xs: "center", md: "left" },
                 textTransform: "uppercase",
                 color: "#ffffff",
               }}
             >
-              Send Us a Message
+              SEND US A MESSAGE
             </Typography>
-            <Typography sx={{ color: color.white }}>
+            <Typography sx={{ color: color.white, fontFamily: "JostRegular" }}>
               Have a question? Need help with bookings, visas, or passport
               renewals? Fill out the form below, and our team will get back to
               you promptly.

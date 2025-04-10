@@ -1,6 +1,10 @@
 import { Business, Email, Today, WifiCalling } from "@mui/icons-material";
 import { Container, Grid, IconButton, Typography } from "@mui/material";
 import React from "react";
+import ContactIcon1 from "../../assets/Svg/ContactIcon1.svg";
+import ContactIcon2 from "../../assets/Svg/ContactIcon2.svg";
+import ContactIcon3 from "../../assets/Svg/ContactIcon3.svg";
+import ContactIcon4 from "../../assets/Svg/ContactIcon4.svg";
 import { color } from "../../constant";
 const ContactSec2 = () => {
   return (
@@ -31,24 +35,22 @@ const ContactSec2 = () => {
           }}
         >
           <Grid
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
             sx={{
               display: "flex",
               flexDirection: "column",
+              height: "300px",
               gap: "0.5rem",
               flex: 1,
               backgroundColor: color.blue,
               color: color.white,
               paddingTop: "0.7rem",
               paddingLeft: "0.7rem",
+              borderRight: "1rem solid #414143",
+              borderBottom: "1rem solid #414143",
             }}
           >
             <Grid
               sx={{
-                borderTop: "1px solid #ffffff",
-                borderLeft: "1px solid #ffffff",
                 flex: 1,
                 padding: "1rem",
                 justifyContent: "flex-start",
@@ -59,173 +61,195 @@ const ContactSec2 = () => {
                 pb: "2rem",
               }}
             >
-              <IconButton>
-                <WifiCalling
-                  sx={{ color: "#ffffff", fontSize: "3rem", mb: "1rem" }}
-                />
-              </IconButton>
-              <Typography
-                sx={{
-                  fontSize: "1rem ",
-                  fontFamily: "TomatoGroteskRegular",
-                  mb: "0.5rem",
-                }}
-              >
-                {/* {"Call Us"} */} Phone
-              </Typography>
-              <Typography>847 301 7777 </Typography>
-              <Typography>773 764 4544 </Typography>
-            </Grid>
-          </Grid>
-          <Grid
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.5rem",
-              flex: 1,
-              backgroundColor: color.blue,
-              color: color.white,
-              paddingTop: "0.7rem",
-              paddingLeft: "0.7rem",
-            }}
-          >
-            <Grid
-              sx={{
-                borderTop: "1px solid #ffffff",
-                borderLeft: "1px solid #ffffff",
-                flex: 1,
-                padding: "1rem",
-                justifyContent: "flex-start",
-                alignItems: "center",
-                display: "flex",
-                flexDirection: "column",
-                textAlign: "center",
-                pb: "2rem",
-              }}
-            >
-              <IconButton>
-                <Email
-                  sx={{ color: "#ffffff", fontSize: "3rem", mb: "1rem" }}
-                />
-              </IconButton>
-              <Typography
-                sx={{
-                  fontSize: "1rem ",
-                  fontFamily: "TomatoGroteskRegular",
-                  mb: "0.5rem",
-                }}
-              >
-                {/* {"Email"} */}Email:
-              </Typography>
-              <Typography>pravinaptel@airtoursinc.us</Typography>
-            </Grid>
-          </Grid>
-          <Grid
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.5rem",
-              flex: 1,
-              backgroundColor: color.blue,
-              color: color.white,
-              paddingTop: "0.7rem",
-              paddingLeft: "0.7rem",
-            }}
-          >
-            <Grid
-              sx={{
-                borderTop: "1px solid #ffffff",
-                borderLeft: "1px solid #ffffff",
-                flex: 1,
-                padding: "1rem",
-                justifyContent: "flex-start",
-                alignItems: "center",
-                display: "flex",
-                flexDirection: "column",
-                textAlign: "center",
-                pb: "2rem",
-              }}
-            >
-              <IconButton>
-                <Business
-                  sx={{ color: "#ffffff", fontSize: "3rem", mb: "1rem" }}
-                />
-              </IconButton>
-              <Typography
-                sx={{
-                  fontSize: "1rem ",
-                  fontFamily: "TomatoGroteskRegular",
-                  mb: "0.5rem",
-                }}
-              >
-                {/* {"Address"} */}Address:
-              </Typography>
-              <Typography>831 W Higgins Road, Schaumburg, IL 60195</Typography>
-            </Grid>
-          </Grid>
-          <Grid
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.5rem",
-              flex: 1,
-              backgroundColor: color.blue,
-              color: color.white,
-              paddingTop: "0.7rem",
-              paddingLeft: "0.7rem",
-            }}
-          >
-            <Grid
-              sx={{
-                borderTop: "1px solid #ffffff",
-                borderLeft: "1px solid #ffffff",
-                flex: 1,
-                padding: "1rem",
-                justifyContent: "flex-start",
-                alignItems: "center",
-                display: "flex",
-                flexDirection: "column",
-                textAlign: "center",
-                pb: "2rem",
-              }}
-            >
-              <IconButton>
-                <Today
-                  sx={{ color: "#ffffff", fontSize: "3rem", mb: "1rem" }}
-                />
-              </IconButton>
-              <Typography
-                sx={{
-                  fontSize: "1rem ",
-                  fontFamily: "TomatoGroteskRegular",
-                  mb: "0.5rem",
-                }}
-              >
-                Opening Hours
-              </Typography>
-              <Typography>831 W Higgins Road, Schaumburg, IL 60195</Typography>
+              <img
+                src={ContactIcon1}
+                style={{ height: "30%", width: "30%", marginTop: "1.5rem" }}
+                alt=""
+              />
 
+              <Typography
+                sx={{
+                  fontSize: "1rem ",
+                  // fontFamily: "JostRegular",
+                  marginTop: "2.5rem",
+                  // fontSize: "1rem ",
+                  fontFamily: "JostBold",
+                  // fontWeight: 500,
+                }}
+              >
+                {/* {"Call Us"} */} Mobile No
+              </Typography>
+              <Typography sx={{ fontFamily: "JostRegular", fontSize: "1rem" }}>
+                847 301 7777{" "}
+              </Typography>
+              <Typography sx={{ fontFamily: "JostRegular", fontSize: "1rem" }}>
+                773 764 4544{" "}
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.5rem",
+              flex: 1,
+              height: "300px",
+              backgroundColor: color.blue,
+              color: color.white,
+              paddingTop: "0.7rem",
+              paddingLeft: "0.7rem",
+              borderRight: "1rem solid #414143",
+              borderBottom: "1rem solid #414143",
+            }}
+          >
+            <Grid
+              sx={{
+                flex: 1,
+                padding: "1rem",
+                justifyContent: "flex-start",
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
+                textAlign: "center",
+                pb: "2rem",
+              }}
+            >
+              <img
+                src={ContactIcon2}
+                style={{ height: "30%", width: "30%", marginTop: "1.5rem" }}
+                alt=""
+              />
+              <Typography
+                sx={{
+                  fontSize: "1rem ",
+                  fontFamily: "JostRegular",
+                  marginTop: "2.5rem",
+                  // fontSize: "1rem ",
+                  // fontFamily: "JostBold",
+                  // fontWeight: 600,
+                }}
+              >
+                {/* {"Email"} */}Email Address
+              </Typography>
+              <Typography sx={{ fontFamily: "JostRegular", fontSize: "1rem" }}>
+                pravinaptel@airtoursinc.us
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.5rem",
+              flex: 1,
+              backgroundColor: color.blue,
+              color: color.white,
+              paddingTop: "0.7rem",
+              paddingLeft: "0.7rem",
+              height: "300px",
+              borderRight: "1rem solid #414143",
+              borderBottom: "1rem solid #414143",
+            }}
+          >
+            <Grid
+              sx={{
+                flex: 1,
+                padding: "1rem",
+                justifyContent: "flex-start",
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
+                textAlign: "center",
+                pb: "2rem",
+              }}
+            >
+              <img
+                src={ContactIcon3}
+                style={{ height: "30%", width: "30%", marginTop: "1.5rem" }}
+                alt=""
+              />
+              <Typography
+                sx={{
+                  fontSize: "1rem ",
+                  fontFamily: "JostBold",
+                  // fontWeight: 600,
+
+                  marginTop: "2.5rem",
+                }}
+              >
+                {/* {"Address"} */}Our Location
+              </Typography>
+              <Typography sx={{ fontFamily: "JostRegular", fontSize: "1rem" }}>
+                831 W Higgins Road, Schaumburg, IL 60195
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.5rem",
+              flex: 1,
+              height: "300px",
+              backgroundColor: color.blue,
+              color: color.white,
+              paddingTop: "0.7rem",
+              paddingLeft: "0.7rem",
+              borderRight: "1rem solid #414143",
+              borderBottom: "1rem solid #414143",
+            }}
+          >
+            <Grid
+              sx={{
+                flex: 1,
+                padding: "1rem",
+                justifyContent: "flex-start",
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
+                textAlign: "center",
+                pb: "2rem",
+              }}
+            >
+              <img
+                src={ContactIcon4}
+                style={{ height: "30%", width: "30%", marginTop: "1.5rem" }}
+                alt=""
+              />
+              <Typography
+                sx={{
+                  fontSize: "1rem ",
+                  marginTop: "2.5rem",
+                  fontFamily: "JostBold",
+                  // fontWeight: 6    00,
+                }}
+              >
+                Office Hour
+              </Typography>
+              <Typography sx={{ fontFamily: "JostRegular", fontSize: "1rem" }}>
+                Monday – Friday
+              </Typography>{" "}
+              <Typography sx={{ fontFamily: "JostRegular", fontSize: "1rem" }}>
+                {" "}
+                11:00 AM – 04:00 PM
+              </Typography>
               <>
                 <Typography
                   //   key={index}
                   sx={{
                     fontSize: "1rem ",
-                    fontFamily: "TomatoGroteskRegular",
+                    fontFamily: "JostRegular",
                   }}
                 >
                   {/* {item.hours} */}
                 </Typography>
               </>
-
               {/* })} */}
             </Grid>
           </Grid>

@@ -51,9 +51,8 @@ const AboutSec6 = () => {
               fontWeight: 500,
               fontSize: "1.5rem",
               marginY: "1rem",
-              letterSpacing: "0.1rem",
+              // letterSpacing: "0.1rem",
               marginTop: "1rem  ",
-              fontWeight: 500,
             }}
           >
             At Air Tours Inc., we pride ourselves on offering an all-in-one

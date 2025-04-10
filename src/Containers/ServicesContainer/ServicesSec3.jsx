@@ -34,11 +34,14 @@ function ServicesSec3() {
         <Grid
           item
           xs={12}
-          md={4}
+          md={4.5}
           sx={{
             backgroundColor: "#F5F5ED",
             color: "#87877F",
-            width: "30%",
+            width: "32%",
+            // fontFamily: "RalewayRegular",
+
+            // border: "1px solid red",
           }}
         >
           {res?.map((item) => (
@@ -47,8 +50,11 @@ function ServicesSec3() {
               onClick={() => setActiveId(item._id)}
               sx={{
                 cursor: "pointer",
-                px: 1,
-                py: 2,
+                padding: "1%",
+                display: "flex",
+                justifyContent: "center",
+                fontFamily: "RalewayBold",
+                // fontWeight: 900,
                 borderBottom: "1px solid #007BFF",
                 backgroundColor:
                   activeId === item._id ? "#4E64EE" : "transparent",

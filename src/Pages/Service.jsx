@@ -10,7 +10,7 @@ const Services = () => {
 
   return (
     <Grid>
-      <div className="servicesbanner">
+      <div className="servicesbanner" style={{ marginTop: "-97px" }}>
         <ServicesSec1 />
       </div>
       {/* <ServicesSec2 /> */}
