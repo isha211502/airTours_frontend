@@ -19,7 +19,7 @@ const pages = ["Home", "About", "Service", "Contact"];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const location = useLocation();
-
+  const transparentRoutes = [path.home, path.service];
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -34,8 +34,9 @@ function Navbar() {
       sx={{
         paddingY: 1,
         boxShadow: "none",
-        backgroundColor:
-          location.pathname === path.home ? "transparent" : "#2E2D2D",
+        backgroundColor: transparentRoutes.includes(location.pathname)
+          ? "transparent"
+          : "#2E2D2D",
         transition: "background-color 0.3s ease-in-out",
       }}
     >
@@ -84,12 +85,11 @@ function Navbar() {
                   to={path[page.toLowerCase()]}
                   style={{
                     fontFamily: "JostRegular",
-                    fontSize: "1.2rem",
+                    // fontSize: "1.2rem",
                     textDecoration: "none",
                     color: isActive ? "#4E64EE" : "white", // Active link color blue
                     fontWeight: isActive ? "bold" : "600",
                     fontSize: "1rem",
-                    fontFamily: "Raleway, sans-serif",
                     transition: "0.3s",
                   }}
                 >

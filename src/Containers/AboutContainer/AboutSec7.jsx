@@ -49,7 +49,7 @@ const AbouSec7 = () => {
             fontSize: "1.5rem",
             fontWeight: 500,
             marginTop: "1rem",
-            letterSpacing: "0.1rem",
+            // letterSpacing: "0.1rem",
           }}
         >
           At Air Tours Inc., our customers are our priority. We understand that
@@ -80,8 +80,7 @@ const AbouSec7 = () => {
                   textAlign: "center",
                   backgroundColor: color.lightdark,
                   color: color.white,
-                  px: 1,
-                  py: 2,
+                  p: 1,
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
@@ -100,7 +99,7 @@ const AbouSec7 = () => {
                       fontWeight: 800,
                       textAlign: "left",
                       letterSpacing: "0.1rem",
-                      marginTop: "1rem",
+                      marginTop: "2.5rem",
                     }}
                   >
                     {item.title}
