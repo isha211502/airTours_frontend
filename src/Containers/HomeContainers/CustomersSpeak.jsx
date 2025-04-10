@@ -12,7 +12,6 @@ import { color } from "../../constant";
 import OCSPlane from "../../assets/Svg/OCSPlane.svg";
 import { useClientData } from "../../utils/ApiHelper";
 
-
 const CustomersSpeak = () => {
   const { data, isLoading, error } = useClientData();
 
