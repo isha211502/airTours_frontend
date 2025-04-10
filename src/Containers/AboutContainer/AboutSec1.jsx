@@ -10,6 +10,7 @@ const AboutSec1 = () => {
   const { data, isLoading, error } = useAboutData();
 
   const res = data?.result;
+  console.log(res);
 
   if (isLoading) {
     return <Typography>Loading...</Typography>;
@@ -80,7 +81,7 @@ const AboutSec1 = () => {
                   fontWeight: "700",
                   fontFamily: "JostRegular",
                   whiteSpace: "pre-line",
-            letterSpacing: "0.1rem",
+                  letterSpacing: "0.1rem",
                   mt: 5,
                 }}
               >

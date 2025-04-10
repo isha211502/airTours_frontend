@@ -17,6 +17,14 @@ const CustomersSpeak = () => {
 
   const res = data?.result;
 
+  if (isLoading) {
+    return <Typography>Loading...</Typography>;
+  }
+
+  if (error) {
+    return <Typography>Error loading data!</Typography>;
+  }
+
   return (
     <Box sx={{ backgroundColor: "#fff", pt: 1 }}>
       <Container>
