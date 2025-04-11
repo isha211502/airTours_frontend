@@ -15,9 +15,11 @@ const ServicesSec1 = () => {
       <Grid sx={{ width: "70%" }}>
         <Typography
           sx={{
-            fontSize: { xs: "1rem", md: "4rem", lg: "4rem" },
+            fontSize: { xs: "1rem", sm: "2rem", md: "4rem", lg: "4rem" },
             fontFamily: "RalewayBold",
-            lineHeight: { xs: "1rem", md: "4rem", lg: "5rem" },
+            lineHeight: { xs: "1rem", sm: "2.2rem", md: "4rem", lg: "5rem" },
+            marginTop: { xs: "2rem", sm: "0" },
+            marginLeft: { xs: "0.5rem" },
           }}
         >
           Expert Travel & Documentation Services Under One Roof
@@ -27,9 +29,15 @@ const ServicesSec1 = () => {
           sx={{
             fontFamily: "JostRegular",
 
-            fontSize: { xs: "0.5rem", md: "1rem", lg: "1.5rem" },
+            fontSize: { xs: "0.5rem", sm: "0.8rem", md: "1rem", lg: "1.5rem" },
             marginTop: { xs: "0.5rem", lg: "2rem" },
-            lineHeight: { xs: "0.8rem", md: "1.2rem", lg: "2rem" },
+            lineHeight: {
+              xs: "0.8rem",
+              sm: "0.9rem",
+              md: "1.2rem",
+              lg: "2rem",
+            },
+            marginLeft: { xs: "0.5rem" },
           }}
         >
           At Air Tours Inc., we offer a complete range of travel and consular

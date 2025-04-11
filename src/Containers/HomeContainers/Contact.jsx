@@ -157,7 +157,7 @@ const Contact = () => {
               mt: "5%",
             }}
           >
-            <Grid sx={{ width: { xs: "340px", md: "800px" } }}>
+            <Grid sx={{ width: { xs: "320px", md: "800px" } }}>
               {contactDetails.map((item, index) => (
                 <Box key={index} display="flex" alignItems="center" mb={1}>
                   {item.icon}
@@ -253,7 +253,7 @@ const Contact = () => {
                   },
 
                   // borderBottom: "1px solid white",
-                  mb: 0, // Remove margin-bottom from TextField
+                  mb: 2, // Remove margin-bottom from TextField
                 }}
                 error={!!errors.name} // Keep error state for red outline effect
               />
@@ -273,31 +273,49 @@ const Contact = () => {
             </Box>
 
             {/* Phone Number  */}
-            <TextField
-              name="phoneNo"
-              value={formData.phoneNo}
-              onChange={handleChange}
-              fullWidth
-              variant="standard"
-              label="Phone"
-              InputLabelProps={{ style: { color: "white" } }}
-              sx={{
-                input: {
-                  color: "white",
-                  fontSize: "1rem",
-                  "&:-webkit-autofill": {
-                    WebkitBoxShadow: "0 0 0 1000px transparent inset",
-                    WebkitTextFillColor: "white",
-                    transition: "background-color 5000s ease-in-out 0s",
+            <Box sx={{ position: "relative", width: "100%" }}>
+              <TextField
+                name="phoneNo"
+                value={formData.phoneNo}
+                onChange={handleChange}
+                fullWidth
+                variant="filled"
+                label="Phone"
+                InputLabelProps={{ style: { color: "white" } }}
+                sx={{
+                  backgroundColor: "#4E64EE",
+                  borderRadius: 1,
+                  input: {
+                    color: "white",
+                    fontSize: "1rem",
+                    "&:-webkit-autofill": {
+                      WebkitBoxShadow: "0 0 0 1000px transparent inset",
+                      WebkitTextFillColor: "white",
+                      transition: "background-color 5000s ease-in-out 0s",
+                      backgroundColor: "#4E64EE",
+                    },
                   },
-                },
-                borderBottom: "1px solid white",
-                mb: 2,
-              }}
-              error={!!errors.phoneNo}
-              helperText={errors.phoneNo}
-              FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
-            />
+
+                  mb: 2,
+                }}
+                error={!!errors.phoneNo}
+                // helperText={errors.phoneNo}
+                // FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
+              />
+              {errors.phoneNo && (
+                <Typography
+                  sx={{
+                    color: "#f1a7a7",
+
+                    fontSize: "0.9rem",
+                    mt: "5px",
+                    ml: "5px",
+                  }}
+                >
+                  {errors.phoneNo}
+                </Typography>
+              )}
+            </Box>
 
             {/* EMAIL FIELD */}
             <TextField
@@ -305,10 +323,12 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               fullWidth
-              variant="standard"
+              variant="filled"
               label="Email"
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
+                backgroundColor: "#4E64EE",
+                borderRadius: 1,
                 input: {
                   color: "white",
                   fontSize: "1rem",
@@ -316,15 +336,29 @@ const Contact = () => {
                     WebkitBoxShadow: "0 0 0 1000px transparent inset",
                     WebkitTextFillColor: "white",
                     transition: "background-color 5000s ease-in-out 0s",
+                    backgroundColor: "#4E64EE",
                   },
                 },
-                borderBottom: "1px solid white",
+                // borderBottom: "1px solid white",
                 mb: 2,
               }}
               error={!!errors.email}
-              helperText={errors.email}
-              FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
+              // helperText={errors.email}
+              // FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
             />
+            {errors.email && (
+              <Typography
+                sx={{
+                  color: "#f1a7a7",
+
+                  fontSize: "0.9rem",
+                  mt: "5px",
+                  ml: "5px",
+                }}
+              >
+                {errors.email}
+              </Typography>
+            )}
 
             {/* MESSAGE FIELD */}
             <TextField
@@ -332,27 +366,43 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               fullWidth
-              variant="standard"
+              variant="filled"
               label="Message"
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
+                backgroundColor: "#4E64EE",
+                borderRadius: 1,
                 input: {
-                  color: color.white,
+                  color: "white",
                   fontSize: "1rem",
                   "&:-webkit-autofill": {
                     WebkitBoxShadow: "0 0 0 1000px transparent inset",
                     WebkitTextFillColor: "white",
                     transition: "background-color 5000s ease-in-out 0s",
+                    backgroundColor: "#4E64EE",
                   },
                 },
                 textarea: { color: "white", fontSize: "1rem" },
-                borderBottom: "1px solid white",
+                // borderBottom: "1px solid white",
                 mb: 3,
               }}
               error={!!errors.message}
-              helperText={errors.message}
-              FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
+              // helperText={errors.message}
+              // FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
             />
+            {errors.message && (
+              <Typography
+                sx={{
+                  color: "#f1a7a7",
+
+                  fontSize: "0.9rem",
+                  mt: "5px",
+                  ml: "5px",
+                }}
+              >
+                {errors.email}
+              </Typography>
+            )}
             <Button
               className="submitbtn"
               type="submit"

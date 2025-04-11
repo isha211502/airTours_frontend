@@ -1,82 +1,107 @@
 import {
   Container,
   Grid,
-  IconButton,
   Typography,
   Accordion,
   AccordionDetails,
   AccordionSummary,
 } from "@mui/material";
 import React from "react";
-import { color } from "../../constant";
 import AddIcon from "@mui/icons-material/Add";
-// import { useAboutData } from "../../utils/Apihelper";
+
 export default function ServicesSec4() {
-  //   const { data, isLoading, error } = useAboutData();
-  //   const res = data?.result;
-
-  //   const faqs = res?.aboutFaqs;
-  const item = [
+  const items = [
     {
       question: "Our Flight Services Include:",
       title:
         "International Flight Bookings – Travel to India, Europe, Asia, and other global",
       para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-    },
-    {
-      question: "Our Flight Services Include:",
-      title:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-    },
-    {
-      question: "Our Flight Services Include:",
-      title:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-    },
-    {
-      question: "Our Flight Services Include:",
-      title:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-    },
-    {
-      question: "Our Flight Services Include:",
-      title:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-    },
-    {
-      question: "Our Flight Services Include:",
-      title:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-    },
-
-    {
-      question: "Our Flight Services Include:",
-      title:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-    },
-    {
-      question: "Our Flight Services Include:",
-      title:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-    },
-    {
-      question: "Our Flight Services Include:",
-      title:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
-      title2:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title2: "Additional Services",
       para2:
-        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+        "Special Assistance, Baggage Services, Priority Check-in, and more.",
+      title3: "Premium Services",
+      para3: "Lounge Access, Extra Legroom Seats, Exclusive Travel Packages.",
     },
+    {
+      question: "Our Flight Services Include:",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title2: "Additional Services",
+      para2:
+        "Special Assistance, Baggage Services, Priority Check-in, and more.",
+      title3: "Premium Services",
+      para3: "Lounge Access, Extra Legroom Seats, Exclusive Travel Packages.",
+    },
+    {
+      question: "Our Flight Services Include:",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title2: "Additional Services",
+      para2:
+        "Special Assistance, Baggage Services, Priority Check-in, and more.",
+      title3: "Premium Services",
+      para3: "Lounge Access, Extra Legroom Seats, Exclusive Travel Packages.",
+    },
+    {
+      question: "Our Flight Services Include:",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title2: "Additional Services",
+      para2:
+        "Special Assistance, Baggage Services, Priority Check-in, and more.",
+      title3: "Premium Services",
+      para3: "Lounge Access, Extra Legroom Seats, Exclusive Travel Packages.",
+    },
+    {
+      question: "Our Flight Services Include:",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title2: "Additional Services",
+      para2:
+        "Special Assistance, Baggage Services, Priority Check-in, and more.",
+      title3: "Premium Services",
+      para3: "Lounge Access, Extra Legroom Seats, Exclusive Travel Packages.",
+    },
+    {
+      question: "Our Flight Services Include:",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title2: "Additional Services",
+      para2:
+        "Special Assistance, Baggage Services, Priority Check-in, and more.",
+      title3: "Premium Services",
+      para3: "Lounge Access, Extra Legroom Seats, Exclusive Travel Packages.",
+    },
+    {
+      question: "Our Flight Services Include:",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title2: "Additional Services",
+      para2:
+        "Special Assistance, Baggage Services, Priority Check-in, and more.",
+      title3: "Premium Services",
+      para3: "Lounge Access, Extra Legroom Seats, Exclusive Travel Packages.",
+    },
+    {
+      question: "Our Flight Services Include:",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title2: "Additional Services",
+      para2:
+        "Special Assistance, Baggage Services, Priority Check-in, and more.",
+      title3: "Premium Services",
+      para3: "Lounge Access, Extra Legroom Seats, Exclusive Travel Packages.",
+    },
+    // Additional items can be added here...
   ];
+
   return (
     <Grid
       className="fullcirclebg"
@@ -102,16 +127,12 @@ export default function ServicesSec4() {
 
         <Grid
           container
-          justifyContent={"center"}
+          justifyContent="center"
           sx={{
             display: "flex",
             justifyContent: "center",
             px: { xs: 3.5, md: 3.5 },
-            // height: "100%",
-
             mt: { xs: 3, md: 7 },
-            backgroundPosition: "center",
-            // border: "1px solid red",
           }}
         >
           <Container
@@ -122,24 +143,15 @@ export default function ServicesSec4() {
               flexDirection: "column",
             }}
           >
-            {/* {faqs?.map((item, index) => { */}
-            {item.map((item, index) => (
+            {items.map((item, index) => (
               <Accordion
-                // data-aos="flip-down"
-                // data-aos-duration="2000"
-                //   key={index}
+                key={index}
                 sx={{
-                  backgroundColor: "#5C8AEA",
+                  backgroundColor: "#4E64EE",
                   color: "#ffffff",
                   fontFamily: "TomatoGroteskLight",
                   letterSpacing: "0.1rem",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  flexDirection: "column",
                 }}
-                xs={10}
-                md={11}
-                lg={10.7}
               >
                 <AccordionSummary
                   expandIcon={
@@ -149,11 +161,9 @@ export default function ServicesSec4() {
                   <Typography
                     sx={{
                       fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
-                      fontFamily: "TomatoGroteskLight",
-                      letterSpacing: "0.1rem",
+                      fontFamily: "RalewayBold",
                     }}
                   >
-                    {/* {item.question} */}
                     {item.question}
                   </Typography>
                 </AccordionSummary>
@@ -161,51 +171,77 @@ export default function ServicesSec4() {
                   <Typography
                     sx={{
                       fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
-                      letterSpacing: "1px",
-                      fontFamily: "RalewayRegular",
-                      // color: color.blue,
-                      fontWeight: "500  ",
-                      fontSize: "1.5rem",
+                      fontFamily: "RalewayBold",
+                      fontWeight: "500",
                     }}
                   >
-                    {/* {item.answer} */}
                     {item.title}
                   </Typography>
                   <Typography
                     sx={{
                       fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
-                      letterSpacing: "1px",
+                      fontFamily: "RalewayBold",
                     }}
                   >
-                    {/* {item.answer} */}
                     {item.para}
                   </Typography>
-                  <Typography
-                    sx={{
-                      fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
-                      letterSpacing: "1px",
-                      fontFamily: "RalewayRegular",
-                      // color: color.blue,
-                      fontWeight: "500  ",
-                      fontSize: "1.5rem",
-                    }}
-                  >
-                    {/* {item.answer} */}
-                    {item.title2}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
-                      letterSpacing: "1px",
-                    }}
-                  >
-                    {/* {item.answer} */}
-                    {item.para2}
-                  </Typography>
+                  {item.title2 && (
+                    <Typography
+                      sx={{
+                        fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
+                        fontFamily: "RalewayBold",
+                        fontWeight: "500",
+                        my: 2,
+                      }}
+                    >
+                      {item.title2}
+                      <ul style={{ paddingLeft: "1rem", margin: "0" }}>
+                        <li>
+                          <Typography
+                            sx={{
+                              fontFamily: "RalewayBold",
+                              fontSize: {
+                                xs: "0.7rem",
+                                sm: "0.9rem",
+                                md: "0.95rem",
+                              },
+                            }}
+                          >
+                            {item.para2}
+                          </Typography>
+                        </li>
+                      </ul>
+                    </Typography>
+                  )}
+                  {item.title3 && (
+                    <Typography
+                      sx={{
+                        fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
+                        fontFamily: "RalewayBold",
+                        fontWeight: "500",
+                      }}
+                    >
+                      {item.title3}
+                      <ol style={{ paddingLeft: "1rem", margin: "0" }}>
+                        <li>
+                          <Typography
+                            sx={{
+                              fontFamily: "RalewayBold",
+                              fontSize: {
+                                xs: "0.7rem",
+                                sm: "0.9rem",
+                                md: "0.95rem",
+                              },
+                            }}
+                          >
+                            {item.para3}
+                          </Typography>
+                        </li>
+                      </ol>
+                    </Typography>
+                  )}
                 </AccordionDetails>
               </Accordion>
-
-              // {/* })} */}
             ))}
           </Container>
         </Grid>
