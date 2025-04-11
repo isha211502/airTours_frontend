@@ -10,7 +10,8 @@ const Information = () => {
             sx={{
               color: color.blue,
               fontFamily: "RalewayBold",
-              fontSize: "3rem",
+              fontSize: { xs: "1.7rem", sm: "3rem" },
+              lineHeight: { xs: "1.9rem", sm: "3rem" },
             }}
           >
             Experience Unmatched Convenience
@@ -38,8 +39,8 @@ const Information = () => {
               sx={{
                 color: color.blue,
                 fontFamily: "RalewayBold",
-                fontSize: "3rem",
-                lineHeight: "3rem",
+                fontSize: { xs: "1.7rem", sm: "3rem" },
+                lineHeight: { xs: "1.9rem", sm: "3rem" },
               }}
             >
               Hassle-Free Booking & Documentation
@@ -64,8 +65,9 @@ const Information = () => {
               sx={{
                 color: color.blue,
                 fontFamily: "RalewayBold",
-                fontSize: "3rem",
-                lineHeight: "3rem",
+                fontSize: { xs: "1.7rem", sm: "3rem" },
+                lineHeight: { xs: "1.9rem", sm: "3rem" },
+                marginTop: { xs: "2rem", sm: "0" },
               }}
             >
               Exclusive Travel Perks

@@ -91,6 +91,9 @@ export default function Landing() {
       >
         <Information />
       </Grid>
+      <Grid sx={{ backgroundColor: "#333" }}>
+        <Contact />
+      </Grid>
     </Grid>
   );
 }

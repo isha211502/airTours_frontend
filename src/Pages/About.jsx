@@ -8,6 +8,7 @@ import AboutSec4 from "../Containers/AboutContainer/AboutSec4";
 import AboutSec5 from "../Containers/AboutContainer/AboutSec5";
 import AboutSec6 from "../Containers/AboutContainer/AboutSec6";
 import AboutSec7 from "../Containers/AboutContainer/AboutSec7";
+import Contact from "../Containers/HomeContainers/Contact";
 
 const About = () => {
   return (
@@ -22,6 +23,9 @@ const About = () => {
       </div>
       <AboutSec6 />
       <AboutSec7 />
+      <Grid sx={{ backgroundColor: "#333" }}>
+        <Contact />
+      </Grid>
     </Grid>
   );
 };

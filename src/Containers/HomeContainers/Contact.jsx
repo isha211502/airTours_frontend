@@ -181,7 +181,7 @@ const Contact = () => {
               rows={4}
               sx={{
                 backgroundColor: "#4E64EE",
-                color: "white",
+                color: color.white,
                 borderRadius: 1,
               }}
             />
@@ -191,16 +191,20 @@ const Contact = () => {
               variant="outlined"
               sx={{
                 marginY: "2%",
-                border: "2px solid ",
+                border: "2px solid",
                 color: color.white,
                 borderColor: color.blue,
                 padding: "5px 20px",
                 width: { xs: "100%", sm: "50%", md: "100%" },
                 fontSize: "1rem",
                 fontFamily: "RalewayRegular",
+                "&:hover": {
+                  backgroundColor: color.blue,
+                  color: color.white,
+                },
               }}
             >
-              Send
+              Submit
             </Button>
           </Grid>
         </Grid>

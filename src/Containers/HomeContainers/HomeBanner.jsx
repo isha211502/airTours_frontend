@@ -22,7 +22,7 @@ const HomeBanner = () => {
         <div
           style={{
             height: "100%",
-            backgroundImage: `url(${Background1})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${Background1})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             display: "flex",
@@ -31,24 +31,14 @@ const HomeBanner = () => {
             justifyContent: "center",
             color: "white",
             textAlign: "center",
+            // opacity: 0.5,
           }}
         >
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              backgroundColor: "rgba(0, 0, 0, 0.3)", // Black with 50% transparency
-              zIndex: -1, // Ensure it is behind the content but above the background
-            }}
-          ></div>
           <Grid
             sx={{
               display: "flex",
               justifyContent: "center",
-              marginTop: { xs: "0px", lg: "-10%" },
+              marginTop: { xs: "0px", lg: "-8%" },
             }}
           >
             <Grid sx={{ width: "70%" }}>
@@ -57,15 +47,15 @@ const HomeBanner = () => {
                   fontSize: {
                     xs: "1rem",
                     sm: "2.5rem",
-                    md: "4rem",
+                    md: "3rem",
                     lg: "6rem",
                   },
                   fontFamily: "RalewayBold",
                   lineHeight: {
                     xs: "0.8rem",
                     sm: "1rem",
-                    md: "1.2rem",
-                    lg: "7rem",
+                    md: "3rem",
+                    lg: "6rem",
                   },
                   textAlign: { xs: "center", sm: "left" },
                 }}
@@ -78,13 +68,13 @@ const HomeBanner = () => {
                     xs: "1rem",
                     sm: "2.3rem",
                     md: "2.7rem",
-                    lg: "3rem",
+                    lg: "2.8rem",
                   },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
                 Your One <br />{" "}
-                <span
+                {/* <span
                   style={{
                     border: "1px solid yellow",
                     padding: "5px",
@@ -93,7 +83,79 @@ const HomeBanner = () => {
                   }}
                 >
                   STOP
-                </span>{" "}
+                </span>{" "} */}
+                <span
+                  style={{
+                    position: "relative",
+                    paddingLeft: "1%",
+                    paddingRight: "1%",
+                    marginRight: "1%",
+                    fontFamily: "RalewayBold",
+                    fontWeight: 400,
+                    color: "white",
+                    display: "inline-block",
+                  }}
+                >
+                  STOP
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      border: "1px solid yellow",
+                    }}
+                  ></span>
+                  {/* Top-left corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-4px",
+                      left: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderTop: "2px solid yellow",
+                      borderLeft: "2px solid yellow",
+                    }}
+                  ></span>
+                  {/* Top-right corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-4px",
+                      right: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderTop: "2px solid yellow",
+                      borderRight: "2px solid yellow",
+                    }}
+                  ></span>
+                  {/* Bottom-left corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "-4px",
+                      left: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderBottom: "2px solid yellow",
+                      borderLeft: "2px solid yellow",
+                    }}
+                  ></span>
+                  {/* Bottom-right corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "-4px",
+                      right: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderBottom: "2px solid yellow",
+                      borderRight: "2px solid yellow",
+                    }}
+                  ></span>
+                </span>
                 Travel Partner{" "}
               </Typography>
               <Typography
@@ -102,7 +164,7 @@ const HomeBanner = () => {
                     xs: "0.5rem",
                     sm: "0.8rem",
                     md: "1rem",
-                    lg: "1.5rem",
+                    lg: "1.3rem",
                   },
                   marginTop: { xs: "0.5rem", lg: "2rem" },
                   fontFamily: "JostRegular",
@@ -110,7 +172,7 @@ const HomeBanner = () => {
                     xs: "0.8rem",
                     sm: "1rem",
                     md: "1.2rem",
-                    lg: "2rem",
+                    lg: "1.7rem",
                   },
                   textAlign: { xs: "center", sm: "left" },
                   fontWeight: 500,
@@ -135,7 +197,8 @@ const HomeBanner = () => {
         <div
           style={{
             height: "100%",
-            backgroundImage: `url(${Background2})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Background2})`,
+            // backgroundBlendMode: "lighten",
             backgroundSize: "cover",
             backgroundPosition: "center",
             display: "flex",
@@ -144,24 +207,14 @@ const HomeBanner = () => {
             justifyContent: "center",
             color: "white",
             textAlign: "center",
+            // opacity: 0.5,
           }}
         >
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              backgroundColor: "rgba(0, 0, 0, 1)",
-              zIndex: -1,
-            }}
-          ></div>
           <Grid
             sx={{
               display: "flex",
               justifyContent: "center",
-              marginTop: { xs: "0px", lg: "-10%" },
+              marginTop: { xs: "0px", lg: "-8%" },
             }}
           >
             <Grid sx={{ width: "70%" }}>
@@ -170,15 +223,15 @@ const HomeBanner = () => {
                   fontSize: {
                     xs: "1rem",
                     sm: "2.5rem",
-                    md: "4rem",
+                    md: "3rem",
                     lg: "6rem",
                   },
                   fontFamily: "RalewayBold",
                   lineHeight: {
-                    xs: "1rem",
-                    sm: "3rem",
-                    md: "4rem",
-                    lg: "7rem",
+                    xs: "0.8rem",
+                    sm: "1rem",
+                    md: "3rem",
+                    lg: "6rem",
                   },
                   textAlign: { xs: "center", sm: "left" },
                 }}
@@ -191,13 +244,13 @@ const HomeBanner = () => {
                     xs: "1rem",
                     sm: "2.3rem",
                     md: "2.7rem",
-                    lg: "3rem",
+                    lg: "2.8rem",
                   },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
                 Your One <br />{" "}
-                <span
+                {/* <span
                   style={{
                     border: "1px solid yellow",
                     padding: "5px",
@@ -206,7 +259,79 @@ const HomeBanner = () => {
                   }}
                 >
                   STOP
-                </span>{" "}
+                </span>{" "} */}
+                <span
+                  style={{
+                    position: "relative",
+                    paddingLeft: "1%",
+                    paddingRight: "1%",
+                    marginRight: "1%",
+                    fontFamily: "RalewayBold",
+                    fontWeight: 400,
+                    color: "white",
+                    display: "inline-block",
+                  }}
+                >
+                  STOP
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      border: "1px solid yellow",
+                    }}
+                  ></span>
+                  {/* Top-left corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-4px",
+                      left: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderTop: "2px solid yellow",
+                      borderLeft: "2px solid yellow",
+                    }}
+                  ></span>
+                  {/* Top-right corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-4px",
+                      right: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderTop: "2px solid yellow",
+                      borderRight: "2px solid yellow",
+                    }}
+                  ></span>
+                  {/* Bottom-left corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "-4px",
+                      left: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderBottom: "2px solid yellow",
+                      borderLeft: "2px solid yellow",
+                    }}
+                  ></span>
+                  {/* Bottom-right corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "-4px",
+                      right: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderBottom: "2px solid yellow",
+                      borderRight: "2px solid yellow",
+                    }}
+                  ></span>
+                </span>
                 Travel Partner{" "}
               </Typography>
               <Typography
@@ -215,7 +340,7 @@ const HomeBanner = () => {
                     xs: "0.5rem",
                     sm: "0.8rem",
                     md: "1rem",
-                    lg: "1.5rem",
+                    lg: "1.3rem",
                   },
                   marginTop: { xs: "0.5rem", lg: "2rem" },
                   fontFamily: "JostRegular",
@@ -223,11 +348,11 @@ const HomeBanner = () => {
                     xs: "0.8rem",
                     sm: "1rem",
                     md: "1.2rem",
-                    lg: "2rem",
+                    lg: "1.7rem",
                   },
                   textAlign: { xs: "center", sm: "left" },
                   fontWeight: 500,
-                  letterSpacing: "0.1rem",
+                  latterSpaceing: "0.01rem",
                 }}
               >
                 For over 30 years, Air Tours Inc. has been a trusted name in the
@@ -248,7 +373,7 @@ const HomeBanner = () => {
         <div
           style={{
             height: "100%",
-            backgroundImage: `url(${Background3})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Background3})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             display: "flex",
@@ -257,24 +382,14 @@ const HomeBanner = () => {
             justifyContent: "center",
             color: "white",
             textAlign: "center",
+            // opacity: 1.5,
           }}
         >
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              backgroundColor: "rgba(0, 0, 0, 1)",
-              zIndex: -1,
-            }}
-          ></div>
           <Grid
             sx={{
               display: "flex",
               justifyContent: "center",
-              marginTop: { xs: "0px", lg: "-10%" },
+              marginTop: { xs: "0px", lg: "-8%" },
             }}
           >
             <Grid sx={{ width: "70%" }}>
@@ -283,15 +398,15 @@ const HomeBanner = () => {
                   fontSize: {
                     xs: "1rem",
                     sm: "2.5rem",
-                    md: "4rem",
+                    md: "3rem",
                     lg: "6rem",
                   },
                   fontFamily: "RalewayBold",
                   lineHeight: {
-                    xs: "1rem",
-                    sm: "3rem",
-                    md: "4rem",
-                    lg: "7rem",
+                    xs: "0.8rem",
+                    sm: "1rem",
+                    md: "3rem",
+                    lg: "6rem",
                   },
                   textAlign: { xs: "center", sm: "left" },
                 }}
@@ -304,21 +419,94 @@ const HomeBanner = () => {
                     xs: "1rem",
                     sm: "2.3rem",
                     md: "2.7rem",
-                    lg: "3rem",
+                    lg: "2.8rem",
                   },
                   textAlign: { xs: "center", sm: "left" },
                 }}
               >
                 Your One <br />{" "}
-                <span
+                {/* <span
                   style={{
                     border: "1px solid yellow",
                     padding: "5px",
                     fontFamily: "RalewayBold",
+                    fontWeight: 400,
                   }}
                 >
                   STOP
-                </span>{" "}
+                </span>{" "} */}
+                <span
+                  style={{
+                    position: "relative",
+                    paddingLeft: "1%",
+                    paddingRight: "1%",
+                    marginRight: "1%",
+                    fontFamily: "RalewayBold",
+                    fontWeight: 400,
+                    color: "white",
+                    display: "inline-block",
+                  }}
+                >
+                  STOP
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      border: "1px solid yellow",
+                    }}
+                  ></span>
+                  {/* Top-left corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-4px",
+                      left: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderTop: "2px solid yellow",
+                      borderLeft: "2px solid yellow",
+                    }}
+                  ></span>
+                  {/* Top-right corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: "-4px",
+                      right: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderTop: "2px solid yellow",
+                      borderRight: "2px solid yellow",
+                    }}
+                  ></span>
+                  {/* Bottom-left corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "-4px",
+                      left: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderBottom: "2px solid yellow",
+                      borderLeft: "2px solid yellow",
+                    }}
+                  ></span>
+                  {/* Bottom-right corner */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      bottom: "-4px",
+                      right: "-4px",
+                      width: "8px",
+                      height: "8px",
+                      borderBottom: "2px solid yellow",
+                      borderRight: "2px solid yellow",
+                    }}
+                  ></span>
+                </span>
                 Travel Partner{" "}
               </Typography>
               <Typography
@@ -327,7 +515,7 @@ const HomeBanner = () => {
                     xs: "0.5rem",
                     sm: "0.8rem",
                     md: "1rem",
-                    lg: "1.5rem",
+                    lg: "1.3rem",
                   },
                   marginTop: { xs: "0.5rem", lg: "2rem" },
                   fontFamily: "JostRegular",
@@ -335,11 +523,11 @@ const HomeBanner = () => {
                     xs: "0.8rem",
                     sm: "1rem",
                     md: "1.2rem",
-                    lg: "2rem",
+                    lg: "1.7rem",
                   },
                   textAlign: { xs: "center", sm: "left" },
                   fontWeight: 500,
-                  letterSpacing: "0.1rem",
+                  latterSpaceing: "0.01rem",
                 }}
               >
                 For over 30 years, Air Tours Inc. has been a trusted name in the
