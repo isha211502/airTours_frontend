@@ -86,9 +86,7 @@ function Home({ screen }) {
     <Grid>
       <Navbar />
       {screen ? <Grid>{screen}</Grid> : <Landing />}
-      <Grid sx={{ backgroundColor: "#333" }}>
-        <Contact />
-      </Grid>
+
       <Footer />
     </Grid>
   );

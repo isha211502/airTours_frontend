@@ -77,11 +77,11 @@ body {
   background-repeat: no-repeat;
   display: block;
 }
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .WhyChooseUsBackground {
     display: none;
   }
-}
+} */
 @media only screen and (min-width: 1280px) {
   .WCULine {
     width: 20%;
