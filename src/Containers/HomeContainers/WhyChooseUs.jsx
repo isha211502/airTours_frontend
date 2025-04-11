@@ -19,25 +19,25 @@ const services = [
   {
     title: "Reliable & Trusted Since 1993",
     description:
-      "Air Tours Inc. is a name synonymous with reliability. Our extensive experience in the travel industry has earned us the trust of countless customers worldwide.",
+      "Air Tours Inc. is a name synonymous with reliability. Our extensive experience, partnerships with major airlines, and commitment to customer satisfaction make us the first choice for thousands of travelers.",
     img: img1,
   },
   {
     title: "Comprehensive Travel Solutions",
     description:
-      "From flights and visas to complete vacation packages, we have every aspect of your travel needs covered. Need a package customized for you? We specialize in tailored itineraries.",
+      "From flights and visas to complete vacation packages, we handle every aspect of your journey. You no longer need to juggle multiple agencies—we are your single point of contact for all travel needs.",
     img: img2,
   },
   {
     title: "Best Travel Deals",
     description:
-      "We bring you exclusive airline discounts, affordable vacation packages, and seasonal travel promotions to make sure you travel the world without breaking the bank.",
+      "We bring you exclusive airfare discounts, last-minute travel offers, and seasonal vacation packages so you can explore the world without breaking the bank.",
     img: img3,
   },
   {
     title: "Exceptional Customer Service",
     description:
-      "Our travel consultants are dedicated to assisting you at every step. We offer 24/7 support, expert guidance, and tailored travel insurance for a seamless experience.",
+      "Our travel consultants are dedicated to assisting you at every step, ensuring a seamless experience from booking to boarding.",
     img: img4,
   },
 ];
@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
             color: { xs: color.white, md: color.blue },
             display: "flex",
             justifyContent: { xs: "center", md: "left" },
-            ml:{xs:4,md:0}
+            ml: { xs: 4, md: 0 },
           }}
           fontFamily="RalewayBold"
           fontSize="3rem"
@@ -87,7 +87,7 @@ const WhyChooseUs = () => {
               sx={{
                 hight: "auto",
                 width: { xs: "100%", sm: "45%", md: "40%", lg: "22%" },
-                margin:1
+                margin: 1,
               }}
             >
               <Card
