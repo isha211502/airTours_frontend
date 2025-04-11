@@ -13,7 +13,7 @@ const services = [
   },
   {
     title: "Global Entry Service",
-    description: "Fast-track entry into the U.S. with expert guidance.",
+    description: "Fast - track entry into the U.S. with expert guidance.",
   },
   {
     title: "Renunciation of Indian Citizenship",
@@ -49,7 +49,7 @@ const AboutSec6 = () => {
             sx={{
               fontFamily: "JostRegular",
               fontWeight: 500,
-              fontSize: "1.5rem",
+              fontSize: "1.3rem",
               marginY: "1rem",
               // letterSpacing: "0.1rem",
               marginTop: "1rem  ",
@@ -84,9 +84,9 @@ const AboutSec6 = () => {
                 }}
               >
                 <Typography sx={{ fontWeight: 600, fontSize: "1rem" }}>
-                  {service.title} —{" "}
+                  {service.title} - {" "}
                 </Typography>
-                {service.description}
+                <Typography sx={{ fontFamily: "JostRegular",ml:1}}>{service.description}</Typography>
               </Box>
             ))}
           </Box>

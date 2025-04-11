@@ -46,8 +46,8 @@ const Services = () => {
             color: color.blue,
             fontWeight: 500,
             fontFamily: "JostRegular",
-            lineHeight: "1.5rem",
-            letterSpacing: "0.1rem",
+            lineHeight: "1.8rem",
+           
           }}
         >
           Each journey is unique, and so are your travel needs. Whether you need

@@ -29,7 +29,7 @@ const AboutSec5 = () => {
   const { data, isLoading, error } = useTeamData();
 
   const res = data?.result;
-  console.log(res)
+  console.log(res);
   if (isLoading) {
     return <Typography>Loading...</Typography>;
   }
@@ -68,27 +68,37 @@ const AboutSec5 = () => {
           {/* Cards */}
           <Grid container spacing={4}>
             {res?.map((member, index) => (
-             
               <Grid item xs={12} key={index}>
                 <Box
                   sx={{
                     display: "flex",
                     flexDirection: { xs: "column", sm: "row" },
-                    alignItems: { xs: "flex-start", sm: "center" },
+                    alignItems: {
+                      xs: "flex-start",
+                      sm: "center",
+                      md: "flex-start",
+                    },
                     letterSpacing: "0.1rem",
                     paddingX: { xs: 0, md: 5 },
                     borderRadius: 2,
                   }}
                 >
-                  <Grid sx={{ display: "flex", justifyContent: "center" }}>
+                  <Grid
+                    sx={{
+                      display: "flex",
+                      justifyContent: "center",
+                      height: "189px",
+                      width: "180px",
+                    }}
+                  >
                     {" "}
-                    <Grid
-                      src={member.imgurl}
+                    <img
+                      // src={member.imgurl}
+                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
                       alt={member.name}
-                      sx={{
-                        width: 100,
-                        height: 100,
-                        border: "1px solid red",
+                      style={{
+                        width: "100%",
+                        height: "100%",
                         letterSpacing: "0.1rem",
                         mr: { sm: 3 },
                         mb: { xs: 2, sm: 0 },
@@ -97,7 +107,7 @@ const AboutSec5 = () => {
                   </Grid>
 
                   {/* Info */}
-                  <Box sx={{ width: { xs: "100%", md: "60%" } }}>
+                  <Box sx={{ width: { xs: "100%", md: "70%" }, ml: "3%" }}>
                     <Typography
                       sx={{
                         fontSize: "1.2rem",
@@ -115,10 +125,10 @@ const AboutSec5 = () => {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: "1rem",
+                        fontSize: "1.1rem",
                         fontWeight: "500",
                         fontFamily: "JostRegular",
-                        letterSpacing: "0.1rem",
+                        // letterSpacing: "0.1rem",
                       }}
                       mt={1}
                     >
