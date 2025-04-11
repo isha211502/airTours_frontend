@@ -1,4 +1,5 @@
 import { Box, Grid, Typography, Avatar, Container } from "@mui/material";
+import { useTeamData } from "../../utils/ApiHelper";
 import MOLPlane from "../../assets/Svg/MOLPlan.svg";
 const leadershipTeam = [
   {
@@ -25,6 +26,17 @@ const leadershipTeam = [
 ];
 
 const AboutSec5 = () => {
+  const { data, isLoading, error } = useTeamData();
+
+  const res = data?.result;
+  console.log(res)
+  if (isLoading) {
+    return <Typography>Loading...</Typography>;
+  }
+
+  if (error) {
+    return <Typography>Error loading data!</Typography>;
+  }
   return (
     <Grid>
       <Container sx={{ display: "flex" }}>
@@ -55,7 +67,8 @@ const AboutSec5 = () => {
 
           {/* Cards */}
           <Grid container spacing={4}>
-            {leadershipTeam.map((member, index) => (
+            {res?.map((member, index) => (
+             
               <Grid item xs={12} key={index}>
                 <Box
                   sx={{
@@ -70,7 +83,7 @@ const AboutSec5 = () => {
                   <Grid sx={{ display: "flex", justifyContent: "center" }}>
                     {" "}
                     <Grid
-                      src={member.image}
+                      src={member.imgurl}
                       alt={member.name}
                       sx={{
                         width: 100,
@@ -97,7 +110,7 @@ const AboutSec5 = () => {
                       <span
                         style={{ fontFamily: "JostRegular", fontWeight: 800 }}
                       >
-                        {member.role}
+                        {member.position}
                       </span>
                     </Typography>
                     <Typography
@@ -109,7 +122,7 @@ const AboutSec5 = () => {
                       }}
                       mt={1}
                     >
-                      {member.description}
+                      {member.paragraph}
                     </Typography>
                   </Box>
                 </Box>

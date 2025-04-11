@@ -28,7 +28,7 @@ const AboutSec4 = () => {
   const { data, isLoading, error } = useAboutData();
 
   const res = data?.result;
-
+  
   if (isLoading) {
     return <Typography>Loading...</Typography>;
   }
