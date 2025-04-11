@@ -136,7 +136,7 @@ function ServicesSec3() {
                       <Typography
                         style={{
                           fontFamily: "JostRegular",
-                          fontSize: "1.2rem",
+                          fontSize: "1.1rem",
                           lineHeight: "1.5rem",
                           width: "40%",
                           fontWeight: 600,
@@ -149,7 +149,7 @@ function ServicesSec3() {
                     <Typography
                       style={{
                         fontFamily: "JostRegular",
-                        fontSize: "1.2rem",
+                        fontSize: "1.1rem",
                         lineHeight: "1.5rem",
                         width: "60%",
                       }}
@@ -183,7 +183,7 @@ function ServicesSec3() {
                       <Typography
                         style={{
                           fontFamily: "JostRegular",
-                          fontSize: "1.2rem",
+                          fontSize: "1.1rem",
                           lineHeight: "1.5rem",
                           width: "52%",
                           fontWeight: 600,
@@ -196,7 +196,7 @@ function ServicesSec3() {
                     <Typography
                       style={{
                         fontFamily: "JostRegular",
-                        fontSize: "1.2rem",
+                        fontSize: "1.1rem",
                         lineHeight: "1.5rem",
                         width: "60%",
                       }}

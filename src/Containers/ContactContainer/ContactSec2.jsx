@@ -134,7 +134,7 @@ const ContactSec2 = () => {
               <Typography
                 sx={{
                   fontFamily: "JostRegular",
-                  fontSize: { xs: "1rem", lg: "0.9rem" },
+                  fontSize: { xs: "1rem", lg: "0.8rem" },
                 }}
               >
                 pravinaptel@airtoursinc.us

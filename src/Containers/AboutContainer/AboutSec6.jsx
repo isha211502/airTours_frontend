@@ -52,7 +52,8 @@ const AboutSec6 = () => {
               fontSize: "1.3rem",
               marginY: "1rem",
               // letterSpacing: "0.1rem",
-              marginTop: "1rem  ",
+              marginTop: "1rem ",
+              lineHeight: 1.3,
             }}
           >
             At Air Tours Inc., we pride ourselves on offering an all-in-one
@@ -71,8 +72,8 @@ const AboutSec6 = () => {
                 sx={{
                   backgroundColor: color.lightdark,
                   color: color.white,
-                  px: { xs: 1, md: 1 },
-                  py: { xs: 0, md: 1.5 },
+                  px: { xs: 2, md: 1 },
+                  py: { xs: 3, md: 1.5 },
                   borderRadius: 1,
                   fontSize: "1rem",
                   lineHeight: 1.5,
@@ -82,12 +83,15 @@ const AboutSec6 = () => {
                   fontFamily: "JostRegular",
                   letterSpacing: "0.1rem",
                   fontWeight: "600",
+                  gap:{xs:2,md:0}
                 }}
               >
                 <Typography sx={{ fontWeight: 600, fontSize: "1rem" }}>
-                  {service.title} - {" "}
+                  {service.title} -{" "}
                 </Typography>
-                <Typography sx={{ fontFamily: "JostRegular",ml:1}}>{service.description}</Typography>
+                <Typography sx={{ fontFamily: "JostRegular", ml: 1 }}>
+                  {service.description}
+                </Typography>
               </Box>
             ))}
           </Box>

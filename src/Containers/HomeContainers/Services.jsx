@@ -59,6 +59,7 @@ const Services = () => {
             <Grid key={index}>
               <Card
                 sx={{
+                  width:{xs:"85vw",lg:"auto"},
                   backgroundColor: "#414143",
                   color: "#fff",
                   p: 2,

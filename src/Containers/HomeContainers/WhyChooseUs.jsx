@@ -52,6 +52,7 @@ const WhyChooseUs = () => {
             color: { xs: color.white, md: color.blue },
             display: "flex",
             justifyContent: { xs: "center", md: "left" },
+            ml:{xs:4,md:0}
           }}
           fontFamily="RalewayBold"
           fontSize="3rem"
@@ -72,10 +73,9 @@ const WhyChooseUs = () => {
         {/* Service*/}
         <Grid
           container
-          spacing={3}
+          // gap={"1rem"}
           justifyContent="center"
           marginTop="2rem"
-          sx={{ overflow: "visible" }}
         >
           {services.map((service, index) => (
             <Grid
@@ -87,6 +87,7 @@ const WhyChooseUs = () => {
               sx={{
                 hight: "auto",
                 width: { xs: "100%", sm: "45%", md: "40%", lg: "22%" },
+                margin:1
               }}
             >
               <Card
