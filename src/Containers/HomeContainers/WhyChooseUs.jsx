@@ -92,6 +92,7 @@ const WhyChooseUs = () => {
             >
               <Card
                 sx={{
+                  boxShadow: "none",
                   backgroundColor: "#222",
                   color: "white",
                   padding: "0.2rem",

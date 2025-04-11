@@ -103,7 +103,6 @@ function ServicesSec3() {
                     fontFamily: "JostRegular",
                     fontSize: "1.1rem",
                     lineHeight: "1.7rem",
-                    lineHeight: "1.7rem",
                   }}
                 >
                   {item}
@@ -119,7 +118,6 @@ function ServicesSec3() {
                 fontSize: "2rem",
                 lineHeight: "2.5rem",
                 color: color.blue,
-                mt: "4rem",
                 mt: "4rem",
               }}
             >
@@ -171,7 +169,6 @@ function ServicesSec3() {
                 fontSize: "2rem",
                 lineHeight: "2.5rem",
                 color: color.blue,
-                mt: "4rem",
                 mt: "4rem",
               }}
             >

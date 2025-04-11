@@ -11,7 +11,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ py: { xs: 3, lg: 6 } }}>
+    <Box sx={{ py: { xs: 3, lg: 6 }, background: "#f8f9fc" }}>
       <Grid
         container
         sx={{
