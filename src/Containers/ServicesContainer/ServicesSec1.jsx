@@ -20,7 +20,7 @@ const ServicesSec1 = () => {
             lineHeight: { xs: "1rem", md: "4rem", lg: "5rem" },
           }}
         >
-          International & Domestic Flight Bookings 
+          Expert Travel & Documentation Services Under One Roof
         </Typography>
 
         <Typography
@@ -32,12 +32,11 @@ const ServicesSec1 = () => {
             lineHeight: { xs: "0.8rem", md: "1.2rem", lg: "2rem" },
           }}
         >
-          Whether you're planning a trip back to India, a vacation abroad, or a
-          domestic journey within the U.S., Air Tours Inc. ensures a seamless
-          travel experience with the best flight deals and hassle-free booking
-          process. Our experts work closely with airline partners to provide
-          competitive fares and customized itineraries that suit your travel
-          needs.
+          At Air Tours Inc., we offer a complete range of travel and consular
+          services tailored for NRIs and global travelers from flight bookings
+          and cruise packages to Indian passport renewals, OCI assistance,
+          renunciation, and e-visas. Trust us for reliable, timely, and
+          professional service every step of your journey.
         </Typography>
       </Grid>
     </Grid>

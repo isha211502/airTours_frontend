@@ -24,10 +24,10 @@ const ContactSec3 = () => {
           <Grid
             sx={{
               flex: 1,
-              backgroundColor: color.blue,
+              backgroundColor: color.dark,
               minHeight: "350px",
-              borderRight: "1rem solid #414143",
-              borderBottom: "1rem solid #414143",
+              borderRight: "1rem solid #4E64EE",
+              borderBottom: "1rem solid #4E64EE",
             }}
           ></Grid>
 
@@ -36,14 +36,14 @@ const ContactSec3 = () => {
             component="form"
             // onSubmit={handleSubmit}
             sx={{
-              backgroundColor: color.blue,
+              backgroundColor: color.dark,
               flex: 1,
               p: "1.5rem",
               display: "flex",
               flexDirection: "column",
               gap: "2rem",
-              borderRight: "1rem solid #414143",
-              borderBottom: "1rem solid #414143",
+              borderRight: "1rem solid #4E64EE",
+              borderBottom: "1rem solid #4E64EE",
             }}
           >
             <Typography
