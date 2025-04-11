@@ -56,7 +56,7 @@ const AboutSec4 = () => {
               fontFamily: "JostRegular",
               fontSize: "1.2rem",
               paddingY: "1.5rem",
-              letterSpacing: "0.1rem",
+              // letterSpacing: "0.1rem",
             }}
           >
             With a wealth of experience and a dedicated team, we stand out as a

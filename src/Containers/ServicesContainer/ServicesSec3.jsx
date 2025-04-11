@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Divider, Grid, Typography } from "@mui/material";
 import { color } from "../../constant";
 import { useServiceData } from "../../utils/ApiHelper";
 
@@ -28,47 +28,53 @@ function ServicesSec3() {
 
   return (
     <Container sx={{ paddingY: 6 }}>
-      <Grid container spacing={3}>
+      <Grid container spacing={5}>
         {/* LEFT MENU */}
         <Grid
           item
           xs={12}
           md={4.5}
           sx={{
-            backgroundColor: "#F5F5ED",
+            backgroundColor: "#f8f9fc",
             color: "#87877F",
             width: "32%",
-            // fontFamily: "RalewayRegular",
-
-            // border: "1px solid red",
+            height: "100%",
           }}
         >
-          {res?.map((item) => (
-            <Typography
-              key={item._id}
-              onClick={() => setActiveId(item._id)}
-              sx={{
-                cursor: "pointer",
-                padding: "1%",
-                display: "flex",
-                justifyContent: "center",
-                fontFamily: "RalewayBold",
-                // fontWeight: 900,
-                borderBottom: "1px solid #007BFF",
-                backgroundColor:
-                  activeId === item._id ? "#4E64EE" : "transparent",
-                color: activeId === item._id ? "#fff" : "#000",
-                fontWeight: activeId === item._id ? "bold" : "normal",
-                transition: "0.3s",
-                paddingY: "11%",
-                "&:hover": {
+          {res?.map((item, index) => (
+            <Grid>
+              <Typography
+                key={item._id}
+                onClick={() => setActiveId(item._id)}
+                sx={{
+                  cursor: "pointer",
+                  display: "flex",
+                  fontFamily: "RalewayBold",
+
                   backgroundColor:
-                    activeId === item._id ? "#3A4AC3" : "#E0E0E0",
-                },
-              }}
-            >
-              {item?.serviceTitle}
-            </Typography>
+                    activeId === item._id ? "#4E64EE" : "transparent",
+                  color: activeId === item._id ? "#fff" : "#777777",
+                  fontWeight: activeId === item._id ? "bold" : "normal",
+                  transition: "0.3s",
+                  padding: "11%",
+                  "&:hover": {
+                    backgroundColor: activeId === item._id ? "none" : "#E0E0E0",
+                  },
+                }}
+              >
+                {item?.serviceTitle}
+              </Typography>
+              {index !== res.length - 1 && (
+                <Divider
+                  sx={{
+                    bgcolor: "#dfe0e2",
+                    width: activeId === item._id ? "100%" : "80%",
+                    textAlign: "center",
+                    margin: "0 auto",
+                  }}
+                />
+              )}
+            </Grid>
           ))}
         </Grid>
 
@@ -97,6 +103,7 @@ function ServicesSec3() {
                     fontFamily: "JostRegular",
                     fontSize: "1.1rem",
                     lineHeight: "1.7rem",
+                    lineHeight: "1.7rem",
                   }}
                 >
                   {item}
@@ -112,6 +119,7 @@ function ServicesSec3() {
                 fontSize: "2rem",
                 lineHeight: "2.5rem",
                 color: color.blue,
+                mt: "4rem",
                 mt: "4rem",
               }}
             >
@@ -164,6 +172,7 @@ function ServicesSec3() {
                 lineHeight: "2.5rem",
                 color: color.blue,
                 mt: "4rem",
+                mt: "4rem",
               }}
             >
               {activeContent?.bottomTitle} :
@@ -179,7 +188,7 @@ function ServicesSec3() {
                           fontFamily: "JostRegular",
                           fontSize: "1.2rem",
                           lineHeight: "1.5rem",
-                          width: "40%",
+                          width: "52%",
                           fontWeight: 600,
                           // letterSpacing:"0.1rem"
                         }}

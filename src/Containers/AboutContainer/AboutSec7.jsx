@@ -46,7 +46,7 @@ const AbouSec7 = () => {
         <Typography
           sx={{
             fontFamily: "JostRegular",
-            fontSize: "1.5rem",
+            fontSize: "1.3rem",
             fontWeight: 500,
             marginTop: "1rem",
             // letterSpacing: "0.1rem",
@@ -89,7 +89,7 @@ const AbouSec7 = () => {
                 }}
               >
                 <Box>
-                  <img src={item.img} alt="img" width="80" height="80" />
+                  <img src={item.img} alt="img" width="100" height="100" />
                 </Box>
                 <CardContent>
                   <Typography

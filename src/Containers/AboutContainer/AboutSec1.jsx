@@ -1,4 +1,4 @@
-import { Grid, Typography, Box, Container } from "@mui/material";
+import { Typography, Box, Container, Grid } from "@mui/material";
 import { color } from "../../constant";
 import { useAboutData } from "../../utils/ApiHelper";
 const aboutContent = {
@@ -10,7 +10,6 @@ const AboutSec1 = () => {
   const { data, isLoading, error } = useAboutData();
 
   const res = data?.result;
-  console.log(res);
 
   if (isLoading) {
     return <Typography>Loading...</Typography>;
@@ -21,25 +20,18 @@ const AboutSec1 = () => {
   }
 
   return (
-    <Container>
-      <Grid
-        container
-        sx={{
-          // border: "1px solid red",
-          marginY: 7,
-          display: "flex",
-          // flexDirection: { xs: "column", md: "row" },
-          // justifyContent: "center",
-          // padding: { xs: "1rem", md: "0rem" },
-        }}
-      >
+    <Container sx={{ my: "5%" }}>
+      <Grid container>
         {/* Image Box */}
-        <Grid item xs={12} md={6}>
-          <Box
-            src={res?.aboutImgurl}
-            sx={{
-              width: "300px",
-              height: "400px",
+        <Grid item xs={12} md={6} width={"30%"} height={"480px"}>
+          <img
+            // src={res?.aboutImgurl}
+            src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwww.gravatar.com%2Favatar%2F2c7d99fe281ecd3bcd65ab915bac6dd5%3Fs%3D250"
+            alt={"owner Image"}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit:"cover",
               backgroundColor: "#d3d3d3",
               borderRight: "1.5rem solid #4E64EE",
               borderBottom: "1.5rem solid #4E64EE",
@@ -48,7 +40,7 @@ const AboutSec1 = () => {
         </Grid>
 
         {/* Text Content */}
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} width={"65%"} ml={"5%"}>
           <Typography
             sx={{
               color: color.blue,
@@ -78,11 +70,10 @@ const AboutSec1 = () => {
                 sx={{
                   fontSize: "1.2rem",
                   lineHeight: "1.5rem",
-                  fontWeight: "700",
                   fontFamily: "JostRegular",
-                  whiteSpace: "pre-line",
+                  // whiteSpace: "pre-line",
                   letterSpacing: "0.1rem",
-                  mt: 5,
+                  mt: 3,
                 }}
               >
                 {item}

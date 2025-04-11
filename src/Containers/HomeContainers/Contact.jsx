@@ -129,7 +129,8 @@ const Contact = () => {
         justifyContent="center"
         fontFamily="JostRegular"
         fontSize="1.1rem"
-        letterSpacing="0.1rem"
+        mt={2}
+        letterSpacing="1.5px"
       >
         Your next adventure is just a call away. Contact us today to book your
         flights, cruises, or tours and let us handle all the details!
