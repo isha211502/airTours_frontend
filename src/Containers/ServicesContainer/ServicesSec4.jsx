@@ -13,7 +13,6 @@ export default function ServicesSec4() {
   const { data, isLoading, error } = useServiceData();
 
   const res = data?.result;
-  console.log(res);
 
   const items = [
     {
