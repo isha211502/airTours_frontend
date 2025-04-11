@@ -105,7 +105,8 @@ const ContactSec2 = () => {
             <Grid
               sx={{
                 flex: 1,
-                padding: "1rem",
+                // padding: "1rem",
+                padding: { xs: "1rem", lg: "0rem" },
                 justifyContent: "flex-start",
                 alignItems: "center",
                 display: "flex",
@@ -121,8 +122,7 @@ const ContactSec2 = () => {
               />
               <Typography
                 sx={{
-                  fontSize: "1rem ",
-                  fontFamily: "JostRegular",
+                  fontFamily: "JostBold",
                   marginTop: "2.5rem",
                   // fontSize: "1rem ",
                   // fontFamily: "JostBold",
@@ -131,7 +131,12 @@ const ContactSec2 = () => {
               >
                 {/* {"Email"} */}Email Address
               </Typography>
-              <Typography sx={{ fontFamily: "JostRegular", fontSize: "1rem" }}>
+              <Typography
+                sx={{
+                  fontFamily: "JostRegular",
+                  fontSize: { xs: "1rem", lg: "0.9rem" },
+                }}
+              >
                 pravinaptel@airtoursinc.us
               </Typography>
             </Grid>

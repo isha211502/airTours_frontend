@@ -290,7 +290,7 @@ const Contact = () => {
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
                 input: {
-                  color: "white",
+                  color: color.white,
                   fontSize: "1rem",
                   "&:-webkit-autofill": {
                     WebkitBoxShadow: "0 0 0 1000px transparent inset",
@@ -312,16 +312,20 @@ const Contact = () => {
               variant="outlined"
               sx={{
                 marginY: "2%",
-                border: "2px solid ",
+                border: "2px solid",
                 color: color.white,
                 borderColor: color.blue,
                 padding: "5px 20px",
                 width: { xs: "100%", sm: "50%", md: "100%" },
                 fontSize: "1rem",
                 fontFamily: "RalewayRegular",
+                "&:hover": {
+                  backgroundColor: color.blue,
+                  color: color.white,
+                },
               }}
             >
-              Send
+              Submit
             </Button>
           </Grid>
         </Grid>

@@ -48,7 +48,11 @@ const WhyChooseUs = () => {
       <Container>
         {/* Header  */}
         <Typography
-          sx={{ color: color.blue }}
+          sx={{
+            color: { xs: color.white, md: color.blue },
+            display: "flex",
+            justifyContent: { xs: "center", md: "left" },
+          }}
           fontFamily="RalewayBold"
           fontSize="3rem"
           boxShadow="none"

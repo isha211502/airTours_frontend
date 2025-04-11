@@ -11,7 +11,7 @@ import {
   Grid,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation
+import { Link, useLocation, useNavigate } from "react-router-dom"; // Import useLocation
 import { path } from "../constant";
 import logo from "../assets/Images/ATILogo.jpg";
 const pages = ["Home", "About", "Service", "Contact"];
@@ -19,6 +19,7 @@ const pages = ["Home", "About", "Service", "Contact"];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const location = useLocation();
+  const navigate = useNavigate();
   const transparentRoutes = [path.home, path.service];
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -63,7 +64,14 @@ function Navbar() {
               paddingX: { md: "3rem", lg: "5rem" },
             }}
           > */}
-          <Grid sx={{ height: { xs: 40, md: 80 }, width: { xs: 40, md: 80 } }}>
+          <Grid
+            onClick={() => navigate(path.home)}
+            sx={{
+              height: { xs: 40, md: 80 },
+              width: { xs: 40, md: 80 },
+              cursor: "pointer",
+            }}
+          >
             <img src={logo} alt="" style={{ height: "100%", width: "100%" }} />
           </Grid>
           {/* </Typography> */}
