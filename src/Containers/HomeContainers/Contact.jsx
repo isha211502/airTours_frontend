@@ -200,15 +200,17 @@ const Contact = () => {
             md={6}
             sx={{ marginTop: { xs: 1, sm: 2 } }}
           >
-            <TextField
+            {/* <TextField
               name="name"
               value={formData.name}
               onChange={handleChange}
               fullWidth
-              variant="standard"
+              variant="filled"
               label="Name"
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
+                backgroundColor: "#4E64EE",
+                borderRadius: 1,
                 input: {
                   color: "white",
                   fontSize: "1rem",
@@ -216,6 +218,7 @@ const Contact = () => {
                     WebkitBoxShadow: "0 0 0 1000px transparent inset",
                     WebkitTextFillColor: "white",
                     transition: "background-color 5000s ease-in-out 0s",
+                    backgroundColor: "#4E64EE",
                   },
                 },
                 borderBottom: "1px solid white",
@@ -224,7 +227,50 @@ const Contact = () => {
               error={!!errors.name}
               helperText={errors.name}
               FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
-            />
+            /> */}
+            <Box sx={{ position: "relative", width: "100%" }}>
+              <TextField
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                fullWidth
+                variant="filled"
+                label="Name"
+                InputLabelProps={{ style: { color: "white" } }}
+                sx={{
+                  backgroundColor: "#4E64EE",
+                  borderRadius: 1,
+                  input: {
+                    color: "white",
+                    fontSize: "1rem",
+                    "&:-webkit-autofill": {
+                      WebkitBoxShadow: "0 0 0 1000px transparent inset",
+                      WebkitTextFillColor: "white",
+                      transition: "background-color 5000s ease-in-out 0s",
+                      backgroundColor: "#4E64EE",
+                    },
+                  },
+
+                  // borderBottom: "1px solid white",
+                  mb: 0, // Remove margin-bottom from TextField
+                }}
+                error={!!errors.name} // Keep error state for red outline effect
+              />
+              {errors.name && (
+                <Typography
+                  sx={{
+                    color: "#f1a7a7",
+
+                    fontSize: "0.9rem",
+                    mt: "5px",
+                    ml: "5px",
+                  }}
+                >
+                  {errors.name}
+                </Typography>
+              )}
+            </Box>
+
             {/* Phone Number  */}
             <TextField
               name="phoneNo"

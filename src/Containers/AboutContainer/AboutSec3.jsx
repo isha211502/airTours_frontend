@@ -55,8 +55,9 @@ const AboutSec3 = () => {
                 <Typography
                   sx={{
                     fontFamily: "JostRegular",
-                    fontSize: "1.2rem",
+                    fontSize: { xs: "1rem", md: "1.2rem" },
                     fontWeight: 600,
+                    marginY: { xs: "1rem", md: "0rem" },
                     letterSpacing: "0.1rem",
                   }}
                 >
@@ -79,7 +80,7 @@ const AboutSec3 = () => {
                   borderRadius: 1,
                   fontFamily: "JostRegular",
                   textAlign: "center",
-                  fontSize: "1.2rem",
+                  fontSize: { xs: "1rem", md: "1.2rem" },
 
                   fontWeight: "600",
                   letterSpacing: "0.1em",

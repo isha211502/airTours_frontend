@@ -41,12 +41,12 @@ const ContactSec2 = () => {
               height: "300px",
               gap: "0.5rem",
               flex: 1,
-              backgroundColor: color.blue,
+              backgroundColor: color.dark,
               color: color.white,
               paddingTop: "0.7rem",
               paddingLeft: "0.7rem",
-              borderRight: "1rem solid #414143",
-              borderBottom: "1rem solid #414143",
+              borderRight: "1rem solid #4E64EE",
+              borderBottom: "1rem solid #4E64EE",
             }}
           >
             <Grid
@@ -94,12 +94,12 @@ const ContactSec2 = () => {
               gap: "0.5rem",
               flex: 1,
               height: "300px",
-              backgroundColor: color.blue,
+              backgroundColor: color.dark,
               color: color.white,
               paddingTop: "0.7rem",
               paddingLeft: "0.7rem",
-              borderRight: "1rem solid #414143",
-              borderBottom: "1rem solid #414143",
+              borderRight: "1rem solid #4E64EE",
+              borderBottom: "1rem solid #4E64EE",
             }}
           >
             <Grid
@@ -150,13 +150,13 @@ const ContactSec2 = () => {
               flexDirection: "column",
               gap: "0.5rem",
               flex: 1,
-              backgroundColor: color.blue,
+              backgroundColor: color.dark,
               color: color.white,
               paddingTop: "0.7rem",
               paddingLeft: "0.7rem",
               height: "300px",
-              borderRight: "1rem solid #414143",
-              borderBottom: "1rem solid #414143",
+              borderRight: "1rem solid #4E64EE",
+              borderBottom: "1rem solid #4E64EE",
             }}
           >
             <Grid
@@ -202,12 +202,12 @@ const ContactSec2 = () => {
               gap: "0.5rem",
               flex: 1,
               height: "300px",
-              backgroundColor: color.blue,
+              backgroundColor: color.dark,
               color: color.white,
               paddingTop: "0.7rem",
               paddingLeft: "0.7rem",
-              borderRight: "1rem solid #414143",
-              borderBottom: "1rem solid #414143",
+              borderRight: "1rem solid #4E64EE",
+              borderBottom: "1rem solid #4E64EE",
             }}
           >
             <Grid
