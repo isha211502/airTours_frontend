@@ -11,7 +11,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ backgroundColor: "#f8f8f8", py: { xs: 3, lg: 6 } }}>
+    <Box sx={{ py: { xs: 3, lg: 6 } }}>
       <Grid
         container
         sx={{
@@ -27,7 +27,10 @@ const Footer = () => {
         <Grid item xs={12} md={4}>
           <Box
             sx={{ cursor: "pointer", mb: 2 }}
-            onClick={() => navigate(path.home)}
+            onClick={() => {
+              navigate(path.home);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
           >
             <img
               src={logo}
@@ -83,6 +86,7 @@ const Footer = () => {
               <Link
                 key={page}
                 to={path[page.toLowerCase()]}
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 style={{
                   fontFamily: "RalewayRegular",
                   textDecoration: "none",

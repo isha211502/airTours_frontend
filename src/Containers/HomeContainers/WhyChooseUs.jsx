@@ -56,6 +56,7 @@ const WhyChooseUs = () => {
           fontFamily="RalewayBold"
           fontSize="3rem"
           boxShadow="none"
+          lineHeight="3rem"
         >
           Why Choose Us?
         </Typography>

@@ -71,8 +71,8 @@ const AboutSec6 = () => {
                 sx={{
                   backgroundColor: color.lightdark,
                   color: color.white,
-                  px: 2,
-                  py: 1.5,
+                  px: { xs: 1, md: 1 },
+                  py: { xs: 0, md: 1.5 },
                   borderRadius: 1,
                   fontSize: "1rem",
                   lineHeight: 1.5,
@@ -81,6 +81,7 @@ const AboutSec6 = () => {
                   justifyContent: "center",
                   fontFamily: "JostRegular",
                   letterSpacing: "0.1rem",
+                  fontWeight: "600",
                 }}
               >
                 <Typography sx={{ fontWeight: 600, fontSize: "1rem" }}>
