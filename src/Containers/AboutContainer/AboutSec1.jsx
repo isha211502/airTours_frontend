@@ -23,7 +23,7 @@ const AboutSec1 = () => {
     <Container sx={{ my: "5%" }}>
       <Grid container>
         {/* Image Box */}
-        <Grid item xs={12} md={6} width={"30%"} height={"480px"}>
+        <Grid item xs={12} md={6} sx={{width:{xs:"95%",md:"30%"}}} height={"480px"}>
           <img
             // src={res?.aboutImgurl}
             src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fwww.gravatar.com%2Favatar%2F2c7d99fe281ecd3bcd65ab915bac6dd5%3Fs%3D250"
@@ -33,14 +33,14 @@ const AboutSec1 = () => {
               height: "100%",
               objectFit:"cover",
               backgroundColor: "#d3d3d3",
-              borderRight: "1.5rem solid #4E64EE",
-              borderBottom: "1.5rem solid #4E64EE",
+              borderRight: "1rem solid #4E64EE",
+              borderBottom: "1rem solid #4E64EE",
             }}
           />
         </Grid>
 
         {/* Text Content */}
-        <Grid item xs={12} md={6} width={"65%"} ml={"5%"}>
+        <Grid item xs={12} md={6} sx={{width:{xs:"95%",md:"65%"},mt:{xs:5,md:0}}} ml={"5%"}>
           <Typography
             sx={{
               color: color.blue,

@@ -49,6 +49,7 @@ const AbouSec7 = () => {
             fontSize: "1.3rem",
             fontWeight: 500,
             marginTop: "1rem",
+            lineHeight: 1.3,
             // letterSpacing: "0.1rem",
           }}
         >
@@ -59,7 +60,12 @@ const AbouSec7 = () => {
           we ensure a smooth and enjoyable experience.
         </Typography>
 
-        <Grid container spacing={4} mt={2}>
+        <Grid
+          container
+          spacing={4}
+          sx={{ justifyContent: { xs: "center", md: "normal" } }}
+          mt={2}
+        >
           {features.map((item, index) => (
             <Grid
               item

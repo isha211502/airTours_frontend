@@ -29,7 +29,7 @@ const AboutSec5 = () => {
   const { data, isLoading, error } = useTeamData();
 
   const res = data?.result;
-  console.log(res);
+
   if (isLoading) {
     return <Typography>Loading...</Typography>;
   }

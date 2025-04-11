@@ -64,7 +64,7 @@ const AboutSec4 = () => {
             Tours Inc.
           </Typography>
 
-          <Grid container spacing={3}>
+          <Grid container spacing={3} sx={{justifyContent:{xs:"center",md:"normal"}}}>
             {res?.chooseUs?.map((item, index) => (
               <Grid key={index} item xs={12} sm={6} md={2} lg={2}>
                 <Box

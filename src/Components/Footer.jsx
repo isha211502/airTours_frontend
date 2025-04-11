@@ -80,7 +80,6 @@ const Footer = () => {
           </Typography>
 
           {pages.map((page) => {
-            const isActive = location.pathname === path[page.toLowerCase()];
 
             return (
               <Link
