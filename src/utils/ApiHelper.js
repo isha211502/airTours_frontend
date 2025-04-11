@@ -117,7 +117,8 @@ export const useAddContact = () => {
   return useMutation({
     mutationFn: addContactData,
     onSuccess: () => {
-      queryClient.invalidateQueries(["contactData"]); // Refresh contact list
+      queryClient.invalidateQueries(["contactData"]); 
     },
   });
 };
+

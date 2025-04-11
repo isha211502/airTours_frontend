@@ -1,9 +1,62 @@
 import { Button, Container, Grid, TextField, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
+import { useAddContact } from "../../utils/ApiHelper";
 import { color } from "../../constant";
+import "react-toastify/dist/ReactToastify.css";
+import { toast, ToastContainer } from "react-toastify";
 const ContactSec3 = () => {
+  const { mutate, isLoading } = useAddContact();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNo: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+  // Function to validate form fields
+  const validate = () => {
+    let tempErrors = {};
+
+    if (!formData.name?.trim()) tempErrors.name = "Name is required!";
+    else if (formData.name.length < 4)
+      tempErrors.name = "Name must be at least 4 characters long!";
+
+    if (!formData.email?.trim()) tempErrors.email = "Email is required!";
+    else if (!/\S+@\S+\.\S+/.test(formData.email))
+      tempErrors.email = "Invalid email format!";
+
+    if (!formData.phoneNo?.trim()) tempErrors.phoneNo = "phoneNo is required!";
+    else if (formData.phoneNo.length !== 10)
+      tempErrors.phoneNo = "phoneNo must be at least 10 characters long!";
+
+    setErrors(tempErrors);
+    return Object.keys(tempErrors).length === 0;
+  };
+
+  // Handle input change
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validate()) {
+      mutate(formData, {
+        onSuccess: () => {
+          toast.success("Your message sent Successfully!");
+          setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
+        },
+        onError: (error) => {
+          toast.error(error?.response?.data?.message);
+        },
+      });
+    }
+  };
   return (
     <>
+    <ToastContainer/>
       <Grid
         sx={{
           display: "flex",
@@ -34,7 +87,7 @@ const ContactSec3 = () => {
           {/* FORM SECTION */}
           <Grid
             component="form"
-            // onSubmit={handleSubmit}
+            onSubmit={handleSubmit}
             sx={{
               backgroundColor: color.blue,
               flex: 1,
@@ -67,77 +120,107 @@ const ContactSec3 = () => {
             {/* NAME FIELD */}
             <TextField
               name="name"
-              //   value={formData.name}
-              //   onChange={handleChange}
+              value={formData.name}
+              onChange={handleChange}
               fullWidth
               variant="standard"
               label="Name"
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
-                input: { color: "white", fontSize: "1rem" },
+                input: {
+                  color: "white",
+                  fontSize: "1rem",
+                  "&:-webkit-autofill": {
+                    WebkitBoxShadow: "0 0 0 1000px transparent inset",
+                    WebkitTextFillColor: "white",
+                    transition: "background-color 5000s ease-in-out 0s",
+                  },
+                },
                 borderBottom: "1px solid white",
                 mb: 2,
               }}
-              //   error={!!errors.name}
-              //   helperText={errors.name}
+              error={!!errors.name}
+              helperText={errors.name}
               FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
             />
             {/* Phone Number  */}
             <TextField
-              name="Phone"
-              //   value={formData.email}
-              //   onChange={handleChange}
+              name="phoneNo"
+              value={formData.phoneNo}
+              onChange={handleChange}
               fullWidth
               variant="standard"
               label="Phone"
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
-                input: { color: "white", fontSize: "1rem" },
+                input: {
+                  color: "white",
+                  fontSize: "1rem",
+                  "&:-webkit-autofill": {
+                    WebkitBoxShadow: "0 0 0 1000px transparent inset",
+                    WebkitTextFillColor: "white",
+                    transition: "background-color 5000s ease-in-out 0s",
+                  },
+                },
                 borderBottom: "1px solid white",
                 mb: 2,
               }}
-              //   error={!!errors.email}
-              //   helperText={errors.email}
+              error={!!errors.phoneNo}
+              helperText={errors.phoneNo}
               FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
             />
 
             {/* EMAIL FIELD */}
             <TextField
               name="email"
-              //   value={formData.email}
-              //   onChange={handleChange}
+              value={formData.email}
+              onChange={handleChange}
               fullWidth
               variant="standard"
               label="Email"
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
-                input: { color: "white", fontSize: "1rem" },
+                input: {
+                  color: "white",
+                  fontSize: "1rem",
+                  "&:-webkit-autofill": {
+                    WebkitBoxShadow: "0 0 0 1000px transparent inset",
+                    WebkitTextFillColor: "white",
+                    transition: "background-color 5000s ease-in-out 0s",
+                  },
+                },
                 borderBottom: "1px solid white",
                 mb: 2,
               }}
-              //   error={!!errors.email}
-              //   helperText={errors.email}
+              error={!!errors.email}
+              helperText={errors.email}
               FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
             />
 
             {/* MESSAGE FIELD */}
             <TextField
               name="message"
-              //   value={formData.message}
-              //   onChange={handleChange}
+              value={formData.message}
+              onChange={handleChange}
               fullWidth
               variant="standard"
               label="Message"
-              multiline
-              rows={4}
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
-                textarea: { color: "white", fontSize: "1rem" },
+                textarea: {
+                  color: "white",
+                  fontSize: "1rem",
+                  "&:-webkit-autofill": {
+                    WebkitBoxShadow: "0 0 0 1000px transparent inset",
+                    WebkitTextFillColor: "white",
+                    transition: "background-color 5000s ease-in-out 0s",
+                  },
+                },
                 borderBottom: "1px solid white",
                 mb: 3,
               }}
-              //   error={!!errors.message}
-              //   helperText={errors.message}
+              error={!!errors.message}
+              helperText={errors.message}
               FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
             />
 
