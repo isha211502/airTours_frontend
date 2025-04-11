@@ -8,8 +8,13 @@ import {
 } from "@mui/material";
 import React from "react";
 import AddIcon from "@mui/icons-material/Add";
-
+import { useServiceData } from "../../utils/ApiHelper";
 export default function ServicesSec4() {
+  const { data, isLoading, error } = useServiceData();
+
+  const res = data?.result;
+  console.log(res);
+
   const items = [
     {
       question: "Our Flight Services Include:",
@@ -143,7 +148,7 @@ export default function ServicesSec4() {
               flexDirection: "column",
             }}
           >
-            {items.map((item, index) => (
+            {res?.map((item, index) => (
               <Accordion
                 key={index}
                 sx={{
@@ -164,7 +169,7 @@ export default function ServicesSec4() {
                       fontFamily: "RalewayBold",
                     }}
                   >
-                    {item.question}
+                    {item.serviceTitle}
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -177,69 +182,116 @@ export default function ServicesSec4() {
                   >
                     {item.title}
                   </Typography>
+                  {item?.paragraph?.map((item, index) => {
+                    return (
+                      <Typography
+                        key={index}
+                        sx={{
+                          fontSize: {
+                            xs: "0.7rem",
+                            sm: "0.9rem",
+                            md: "0.95rem",
+                          },
+                          fontFamily: "RalewayRegular",
+                          mt: 3,
+                        }}
+                      >
+                        {item}
+                      </Typography>
+                    );
+                  })}
+
                   <Typography
                     sx={{
                       fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
                       fontFamily: "RalewayBold",
+                      fontWeight: "500",
+                      my: 2,
                     }}
                   >
-                    {item.para}
+                    {item.queTitle}
+                    {item?.queDetails?.map((item, index) => {
+                      return (
+                        <ul
+                          style={{ paddingLeft: "1rem", margin: "0" }}
+                          key={index}
+                        >
+                          <li>
+                            {item.title !== "" && (
+                              <Typography
+                                sx={{
+                                  fontFamily: "RalewayBold",
+                                  fontSize: {
+                                    xs: "0.7rem",
+                                    sm: "0.9rem",
+                                    md: "0.95rem",
+                                  },
+                                }}
+                              >
+                                {item.title} :
+                              </Typography>
+                            )}
+                            <Typography
+                              sx={{
+                                fontFamily: "RalewayRegular",
+                                fontSize: {
+                                  xs: "0.7rem",
+                                  sm: "0.9rem",
+                                  md: "0.95rem",
+                                },
+                              }}
+                            >
+                              {item.desc}
+                            </Typography>
+                          </li>
+                        </ul>
+                      );
+                    })}
                   </Typography>
-                  {item.title2 && (
-                    <Typography
-                      sx={{
-                        fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
-                        fontFamily: "RalewayBold",
-                        fontWeight: "500",
-                        my: 2,
-                      }}
-                    >
-                      {item.title2}
-                      <ul style={{ paddingLeft: "1rem", margin: "0" }}>
-                        <li>
-                          <Typography
-                            sx={{
-                              fontFamily: "RalewayBold",
-                              fontSize: {
-                                xs: "0.7rem",
-                                sm: "0.9rem",
-                                md: "0.95rem",
-                              },
-                            }}
-                          >
-                            {item.para2}
-                          </Typography>
-                        </li>
-                      </ul>
-                    </Typography>
-                  )}
-                  {item.title3 && (
-                    <Typography
-                      sx={{
-                        fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
-                        fontFamily: "RalewayBold",
-                        fontWeight: "500",
-                      }}
-                    >
-                      {item.title3}
-                      <ol style={{ paddingLeft: "1rem", margin: "0" }}>
-                        <li>
-                          <Typography
-                            sx={{
-                              fontFamily: "RalewayBold",
-                              fontSize: {
-                                xs: "0.7rem",
-                                sm: "0.9rem",
-                                md: "0.95rem",
-                              },
-                            }}
-                          >
-                            {item.para3}
-                          </Typography>
-                        </li>
-                      </ol>
-                    </Typography>
-                  )}
+
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
+                      fontFamily: "RalewayBold",
+                      fontWeight: "500",
+                    }}
+                  >
+                    {item.bottomTitle}
+                    <ol style={{ paddingLeft: "1rem", margin: "0" }}>
+                      {item?.bottomSteps?.map((item, index) => {
+                        return (
+                          <li key={index}>
+                            {item.title !== "" && (
+                              <Typography
+                                sx={{
+                                  fontFamily: "RalewayBold",
+                                  fontSize: {
+                                    xs: "0.7rem",
+                                    sm: "0.9rem",
+                                    md: "0.95rem",
+                                  },
+                                }}
+                              >
+                                {item.title} :
+                              </Typography>
+                            )}
+                            <Typography
+                              sx={{
+                                fontFamily: "RalewayRegular",
+                                fontSize: {
+                                  xs: "0.7rem",
+                                  sm: "0.9rem",
+                                  md: "0.95rem",
+                                },
+                              }}
+                            >
+                              {item.desc}
+                            </Typography>
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  </Typography>
                 </AccordionDetails>
               </Accordion>
             ))}
