@@ -549,7 +549,7 @@ const HomeBanner = () => {
         <div
           style={{
             height: "100%",
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${Background3})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${Background3})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             display: "flex",
@@ -723,7 +723,7 @@ const HomeBanner = () => {
         <div
           style={{
             height: "100%",
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${Background5})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Background5})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             display: "flex",

@@ -50,6 +50,7 @@ const AboutSec6 = () => {
               fontFamily: "JostRegular",
               fontWeight: 500,
               fontSize: "1.5rem",
+              lineHeight: "1.8rem",
               marginY: "1rem",
               // letterSpacing: "0.1rem",
               marginTop: "1rem  ",
@@ -71,8 +72,8 @@ const AboutSec6 = () => {
                 sx={{
                   backgroundColor: color.lightdark,
                   color: color.white,
-                  px: 2,
-                  py: 1.5,
+                  px: { xs: 1, md: 1 },
+                  py: { xs: 0, md: 1.5 },
                   borderRadius: 1,
                   fontSize: "1rem",
                   lineHeight: 1.5,
@@ -81,12 +82,11 @@ const AboutSec6 = () => {
                   justifyContent: "center",
                   fontFamily: "JostRegular",
                   letterSpacing: "0.1rem",
+                  fontWeight: "600",
                 }}
               >
-                <Typography sx={{ fontWeight: 600, fontSize: "1rem" }}>
-                  {service.title} —{" "}
-                </Typography>
-                {service.description}
+                {service.title} —{" "}
+                <span style={{ fontWeight: "300" }}>{service.description}</span>
               </Box>
             ))}
           </Box>

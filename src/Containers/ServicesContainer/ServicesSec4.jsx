@@ -8,7 +8,7 @@ import {
   AccordionSummary,
 } from "@mui/material";
 import React from "react";
-
+import { color } from "../../constant";
 import AddIcon from "@mui/icons-material/Add";
 // import { useAboutData } from "../../utils/Apihelper";
 export default function ServicesSec4() {
@@ -19,49 +19,62 @@ export default function ServicesSec4() {
   const item = [
     {
       question: "Our Flight Services Include:",
-      answer:
-        "⃣International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
     },
     {
       question: "Our Flight Services Include:",
-      answer:
-        "⃣International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
     },
     {
       question: "Our Flight Services Include:",
-      answer:
-        "⃣International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
     },
     {
       question: "Our Flight Services Include:",
-      answer:
-        "⃣International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
     },
     {
       question: "Our Flight Services Include:",
-      answer:
-        "⃣International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
     },
     {
       question: "Our Flight Services Include:",
-      answer:
-        "⃣International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
     },
 
     {
       question: "Our Flight Services Include:",
-      answer:
-        "⃣International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
     },
     {
       question: "Our Flight Services Include:",
-      answer:
-        "⃣International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global International Flight Bookings – Travel to India, Europe, Asia, and other global ",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
     },
     {
       question: "Our Flight Services Include:",
-      answer:
-        "⃣International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para: "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      title2:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
+      para2:
+        "International Flight Bookings – Travel to India, Europe, Asia, and other global",
     },
   ];
   return (
@@ -149,10 +162,45 @@ export default function ServicesSec4() {
                     sx={{
                       fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
                       letterSpacing: "1px",
+                      fontFamily: "RalewayRegular",
+                      // color: color.blue,
+                      fontWeight: "500  ",
+                      fontSize: "1.5rem",
                     }}
                   >
                     {/* {item.answer} */}
-                    {item.answer}
+                    {item.title}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
+                      letterSpacing: "1px",
+                    }}
+                  >
+                    {/* {item.answer} */}
+                    {item.para}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
+                      letterSpacing: "1px",
+                      fontFamily: "RalewayRegular",
+                      // color: color.blue,
+                      fontWeight: "500  ",
+                      fontSize: "1.5rem",
+                    }}
+                  >
+                    {/* {item.answer} */}
+                    {item.title2}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "0.7rem", sm: "0.9rem", md: "0.95rem" },
+                      letterSpacing: "1px",
+                    }}
+                  >
+                    {/* {item.answer} */}
+                    {item.para2}
                   </Typography>
                 </AccordionDetails>
               </Accordion>
