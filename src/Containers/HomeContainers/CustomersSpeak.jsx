@@ -66,7 +66,7 @@ const CustomersSpeak = () => {
             >
               <Card
                 sx={{
-                  height: "250px",
+                  height: "260px",
                   backgroundColor: "#414143",
                   color: "#fff",
                   p: 1,
