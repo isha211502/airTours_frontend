@@ -69,10 +69,10 @@ const AbouSec7 = () => {
           {features.map((item, index) => (
             <Grid
               item
+              key={index}
               xs={12}
               sm={6}
               md={4}
-              key={index}
               sx={{
                 display: "flex",
                 marginTop: { xs: 5, md: 0 },

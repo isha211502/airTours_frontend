@@ -78,10 +78,10 @@ const Footer = () => {
             Quick Links
           </Typography>
 
-          {pages.map((page) => {
+          {pages.map((page,index) => {
             return (
               <Link
-                key={page}
+                key={index}
                 to={path[page.toLowerCase()]}
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 style={{
