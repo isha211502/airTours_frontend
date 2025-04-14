@@ -42,7 +42,7 @@ function ServicesSec3() {
           }}
         >
           {res?.map((item, index) => (
-            <Grid>
+            <Grid key={index}>
               <Typography
                 key={item._id}
                 onClick={() => setActiveId(item._id)}

@@ -73,31 +73,6 @@ const ServicesSec2 = () => {
           }}
         >
           {item.map((item, index) => (
-            // <Grid key={index}>
-            //   <img
-            //     src={item.img}
-            //     alt="photo"
-            //     style={{ height: "40px", width: "40px" }}
-            //   />
-            //   <Typography
-            //     sx={{
-            //       fontFamily: "JostRegular",
-            //       fontWeight: 600,
-            //       fontSize: "1rem",
-            //     }}
-            //   >
-            //     {item.title}
-            //   </Typography>
-            //   <Typography
-            //     sx={{
-            //       fontFamily: "JostRegular",
-            //       fontWeight: 400,
-            //       fontSize: "1rem",
-            //     }}
-            //   >
-            //     {item.para}
-            //   </Typography>
-            // </Grid>
             <Grid
               key={index}
               sx={{

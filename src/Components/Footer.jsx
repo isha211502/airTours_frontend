@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { path } from "../constant";
 import FacebookIcon from "../assets/Svg/Instaram.svg";
 import InstagramIcon from "../assets/Svg/Facebook.svg";
-import LinkedInIcon from "../assets/Svg/Linkdin.svg";
 const pages = ["Home", "About", "Service", "Contact"];
 const Footer = () => {
   const navigate = useNavigate();
@@ -79,11 +78,10 @@ const Footer = () => {
             Quick Links
           </Typography>
 
-          {pages.map((page) => {
-
+          {pages.map((page,index) => {
             return (
               <Link
-                key={page}
+                key={index}
                 to={path[page.toLowerCase()]}
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 style={{

@@ -220,7 +220,7 @@ const ContactSec3 = () => {
               label="Message"
               InputLabelProps={{ style: { color: "white" } }}
               sx={{
-                textarea: {
+                input: {
                   color: "white",
                   fontSize: "1rem",
                   "&:-webkit-autofill": {
