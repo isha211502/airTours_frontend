@@ -55,7 +55,7 @@ const Contact = () => {
       mutate(formData, {
         onSuccess: () => {
           toast.success("Your message sent Successfully!");
-          setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
+          setFormData({ name: "", email: "", phoneNo: "", message: "" }); // Reset form
         },
         onError: (error) => {
           toast.error(error?.response?.data?.message);
