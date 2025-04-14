@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { path } from "../constant";
 import FacebookIcon from "../assets/Svg/Instaram.svg";
 import InstagramIcon from "../assets/Svg/Facebook.svg";
-import LinkedInIcon from "../assets/Svg/Linkdin.svg";
 const pages = ["Home", "About", "Service", "Contact"];
 const Footer = () => {
   const navigate = useNavigate();
@@ -80,7 +79,6 @@ const Footer = () => {
           </Typography>
 
           {pages.map((page) => {
-
             return (
               <Link
                 key={page}

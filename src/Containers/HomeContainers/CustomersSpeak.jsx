@@ -79,9 +79,13 @@ const CustomersSpeak = () => {
                 <CardContent>
                   <Box display="flex" alignItems="center" mb={2}>
                     <Avatar
-                      src={testimonial.imgurl}
-                      sx={{ bgcolor: "#White", width: 70, height: 70, mr: 2 }}
-                    />
+                      // src={testimonial.imgurl}
+
+                      sx={{ width: 70, height: 70, mr: 2 }}
+                    >
+                      {" "}
+                      {testimonial.name?.charAt(0).toUpperCase()}
+                    </Avatar>
                     <Typography
                       sx={{
                         fontFamily: "JostRegular",
