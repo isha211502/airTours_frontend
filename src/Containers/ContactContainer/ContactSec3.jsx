@@ -4,6 +4,7 @@ import { useAddContact } from "../../utils/ApiHelper";
 import { color } from "../../constant";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
+
 const ContactSec3 = () => {
   const { mutate, isLoading } = useAddContact();
   const [formData, setFormData] = useState({
@@ -46,7 +47,7 @@ const ContactSec3 = () => {
       mutate(formData, {
         onSuccess: () => {
           toast.success("Your message sent Successfully!");
-          setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
+          setFormData({ name: "", email: "", phoneNo: "", message: "" }); // Reset form
         },
         onError: (error) => {
           toast.error(error?.response?.data?.message);

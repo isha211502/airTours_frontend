@@ -208,34 +208,6 @@ const Contact = () => {
               },
             }}
           >
-            {/* <TextField
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              fullWidth
-              variant="filled"
-              label="Name"
-              InputLabelProps={{ style: { color: "white" } }}
-              sx={{
-                backgroundColor: "#4E64EE",
-                borderRadius: 1,
-                input: {
-                  color: "white",
-                  fontSize: "1rem",
-                  "&:-webkit-autofill": {
-                    WebkitBoxShadow: "0 0 0 1000px transparent inset",
-                    WebkitTextFillColor: "white",
-                    transition: "background-color 5000s ease-in-out 0s",
-                    backgroundColor: "#4E64EE",
-                  },
-                },
-                borderBottom: "1px solid white",
-                mb: 2,
-              }}
-              error={!!errors.name}
-              helperText={errors.name}
-              FormHelperTextProps={{ style: { color: "#f1a7a7" } }} // Error color
-            /> */}
             <Box
               sx={{
                 position: "relative",
@@ -263,6 +235,7 @@ const Contact = () => {
                       WebkitTextFillColor: "white",
                       transition: "background-color 5000s ease-in-out 0s",
                       backgroundColor: "#4E64EE",
+                      color: "white",
                     },
                   },
                 }}
@@ -304,6 +277,7 @@ const Contact = () => {
                       WebkitTextFillColor: "white",
                       transition: "background-color 5000s ease-in-out 0s",
                       backgroundColor: "#4E64EE",
+                      color: "white",
                     },
                   },
                 }}
@@ -348,6 +322,7 @@ const Contact = () => {
                       WebkitTextFillColor: "white",
                       transition: "background-color 5000s ease-in-out 0s",
                       backgroundColor: "#4E64EE",
+                      color: "white",
                     },
                   },
                 }}
@@ -391,6 +366,7 @@ const Contact = () => {
                     WebkitTextFillColor: "white",
                     transition: "background-color 5000s ease-in-out 0s",
                     backgroundColor: "#4E64EE",
+                    color: "white",
                   },
                 },
                 textarea: { color: "white", fontSize: "1rem" },
