@@ -79,35 +79,12 @@ const AboutSec5 = () => {
                       md: "flex-start",
                     },
                     letterSpacing: "0.1rem",
-                    paddingX: { xs: 0, md: 5 },
+                    paddingX: { xs: 0, md: 3 },
                     borderRadius: 2,
                   }}
                 >
-                  <Grid
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      height: "189px",
-                      width: "180px",
-                    }}
-                  >
-                    {" "}
-                    <img
-                      // src={member.imgurl}
-                      src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-                      alt={member.name}
-                      style={{
-                        width: "100%",
-                        height: "100%",
-                        letterSpacing: "0.1rem",
-                        mr: { sm: 3 },
-                        mb: { xs: 2, sm: 0 },
-                      }}
-                    />
-                  </Grid>
-
                   {/* Info */}
-                  <Box sx={{ width: { xs: "100%", md: "70%" }, ml: "3%" }}>
+                  <Box sx={{ width: { xs: "100%", md: "70%" } }}>
                     <Typography
                       sx={{
                         fontSize: "1.2rem",
